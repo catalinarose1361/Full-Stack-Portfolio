@@ -1,8 +1,12 @@
 import React from "react";
 import {  Menu } from 'antd'
+import { Typography } from 'antd';
+
+const { Title } = Typography;
 
 function NavTabs(props) {
   return (
+  
     <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
      
       <Menu.Item className="nav-item">
@@ -26,13 +30,17 @@ function NavTabs(props) {
       <Menu.Item className="nav-item">
         <a
           href="#contact"
-          onClick={() => props.handlePageChange("Contact")}
-          className={props.currentPage === "Contact" ? "nav-link active" : "nav-link"}
+          onClick={() => props.handlePageChange("Connect")}
+          className={props.currentPage === "Connect" ? "nav-link active" : "nav-link"}
         >
-          Contact
+          Connect
         </a>
       </Menu.Item>
+      
+    
+    
     </Menu>
+  
   );
 }
 

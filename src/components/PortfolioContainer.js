@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+import Connect from "./pages/Connect";
 
 const { Header, Content, Footer } = Layout;
 class PortfolioCont extends Component {
@@ -14,19 +14,7 @@ class PortfolioCont extends Component {
   };
  
   
-  // hide = () => {
-  //   this.setState({
-  //     hovered: false,
-  //   });
-  // };
-  
-  
-  // handleHoverChange = visible => {
-  //   this.setState({
-  //     hovered: visible,
-  //     clicked: false,
-  //   });
-  // };
+ 
   handlePageChange = page => {
     this.setState({ currentPage: page });
   };
@@ -39,7 +27,7 @@ class PortfolioCont extends Component {
       
       />;
     } else {
-      return <Contact />;
+      return <Connect />;
     }
   };
 
@@ -47,7 +35,7 @@ class PortfolioCont extends Component {
     return (
         <Layout className="layout">
         <Header>
-         
+          
           <NavTabs
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
