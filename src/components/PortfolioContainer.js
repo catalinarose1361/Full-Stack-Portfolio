@@ -10,7 +10,7 @@ const { Header, Content, Footer } = Layout;
 class PortfolioCont extends Component {
   state = {
     currentPage: "About",
-    // hovered: false
+    
   };
  
   
@@ -47,13 +47,7 @@ class PortfolioCont extends Component {
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
       </Layout>
-    //   <div>
-    //     <NavTabs
-    //       currentPage={this.state.currentPage}
-    //       handlePageChange={this.handlePageChange}
-    //     />
-    //     {this.renderPage()}
-    //   </div>
+   
     )
   }
 }

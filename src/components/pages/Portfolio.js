@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Projects from "../Projects"
-// import Search from "./Search";
-import { List, Collapse } from 'antd';
+import { List } from 'antd';
 import passwordPic from "../../images/Screenshot (26).png"
 import weatherPic from "../../images/Screenshot (27).png"
 import notePic from "../../images/Screenshot (28).png"
@@ -9,6 +8,11 @@ import streamerPic from "../../images/Screenshot (32).png"
 import budgetPic from "../../images/Screenshot (50).png"
 import fitPic from "../../images/Screenshot (51).png"
 import corgiPic from "../../images/Screenshot (52).png"
+import passGenPic1 from "../../images/portfolio-project-screenshots/password-gen/Screenshot1.png"
+import passGenPic2 from "../../images/portfolio-project-screenshots/password-gen/Screenshot2.png"
+import passGenPic3 from "../../images/portfolio-project-screenshots/password-gen/Screenshot3.png"
+import passGenPic4 from "../../images/portfolio-project-screenshots/password-gen/Screenshot4.png"
+
 
 
 
@@ -16,7 +20,12 @@ const ProjectData = [
   {
     id: 1,
     name: "Password Generator",
-    image: passwordPic,
+    image: {
+      'image1': passGenPic1, 
+      'image2': passGenPic2, 
+      'image3': passGenPic3, 
+      'image4': passGenPic4, 
+    },
     github: "https://github.com/catalinarose1361/Password-Generator",
     deployed: "https://catalinarose1361.github.io/Password-Generator/",
     description: 

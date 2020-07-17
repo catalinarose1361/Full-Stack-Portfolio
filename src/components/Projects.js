@@ -4,7 +4,7 @@ import { UserOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
 function Projects(props) {
-  console.log(props)
+  console.log(props.src)
   function onChange(a, b, c) {
     console.log(a, b, c);
   }
@@ -14,16 +14,16 @@ function Projects(props) {
     <Card title={props.name}>
     <Carousel afterChange={onChange}>
     <div>
-    <img width={272} src={props.src}></img>
+    <img alt={'project screenshots'} width={272} src={props.src.image1}></img>
     </div>
     <div>
-      <h3>2</h3>
+    <img alt={'project screenshots'} width={272} src={props.src.image2}></img>
     </div>
     <div>
-      <h3>3</h3>
+    <img alt={'project screenshots'} width={272} src={props.src.image3}></img>
     </div>
     <div>
-      <h3>4</h3>
+    <img alt={'project screenshots'} width={272} src={props.src.image4}></img>
     </div>
   </Carousel>
 
