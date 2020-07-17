@@ -8,41 +8,11 @@ const Connect = () =>
 
             <div class="uk-position-center">
                 
-                <a class="button is-outlined" href="mailto:catalinarose@yahoo.com">
+                
 
-                    <span class="icon">
+               
 
-                        <i class="far fa-paper-plane"></i>
-
-                    </span>
-
-                    <span>catalinarose@yahoo.com</span>
-
-                </a>
-
-                <a class="button is-outlined">
-
-                    <span class="icon">
-
-                        <i class="fas fa-mobile-alt"></i>
-
-                    </span>
-
-                    <span>7197498070</span>
-
-                </a>
-
-                <a class="button is-outlined" href='https://www.linkedin.com/in/catalinarwilliams?trk=profile-badge'>
-
-                    <span class="icon">
-
-                        <i class="fab fa-linkedin"></i>
-
-                    </span>
-
-                    <span>CatalinaRWilliams</span>
-                    
-                </a>
+               
                 
                 
                 
