@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs } from 'antd';
 import { Avatar } from 'antd';
-import profilePic from "../../images/IMG_3001.png"
+import profilePic from "../../images/profile-pictures/IMG_3001.png"
 import { Typography } from 'antd';
 
 const { Text } = Typography;
