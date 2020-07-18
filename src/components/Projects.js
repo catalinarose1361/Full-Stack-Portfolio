@@ -1,5 +1,5 @@
 import React from "react";
-import {  Button, Collapse, Card, Carousel } from 'antd'
+import {  Button, Collapse, Card, Carousel, List, Typography } from 'antd'
 import { CaretRightOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 const { Panel } = Collapse;
@@ -30,7 +30,7 @@ function Projects(props) {
       }
       >
   <Meta title={props.name}  />
-  {props.description}
+  
   
     
           
@@ -38,11 +38,14 @@ function Projects(props) {
            
     <Collapse
      bordered={false} 
-     defaultActiveKey={['1']}
+    
      expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
      className="site-collapse-custom-collapse"
      >
-      <Panel header="View Details" key={props.key}>
+       <Panel header="Description" key={props.key}>
+       {props.description} 
+       </Panel>
+      <Panel header="Links" key={props.key}>
         
   <Button href={props.deployed} type="primary" shape="round"  size='small'>
           Deployed App
@@ -50,7 +53,20 @@ function Projects(props) {
   <Button href={props.github} type="primary" shape="round"  size='small'>
           Github Repo
         </Button>
-      {props.description}
+      
+    </Panel>
+    <Panel header="Technologies Used" key={props.key}>
+    <List
+    
+      bordered
+      dataSource={props.technology}
+      renderItem={item => (
+        <List.Item>
+          <Typography.Text mark></Typography.Text> {item}
+        </List.Item>
+      )}
+    />
+      
     </Panel>
     </Collapse>
     

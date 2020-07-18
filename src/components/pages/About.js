@@ -16,25 +16,9 @@ const About = () => (
    
     <div>
 
-    <Avatar src={profilePic} />
-
-    </div>
-
-    <div>
-
-        
-
-        <p>27 Years Old, CO USA</p>
-
-        
-
-        
-
-    </div> 
-    <div className="card-container">
-    <Tabs type="card">
-      <TabPane tab="Introduction" key="1">
-      <Text strong>Full Stack developer with an eye for style and design; leveraging my skills to develop visually beautiful, user-friendly applications.
+    <Avatar size={100}src={profilePic} />
+    <p>27 Years Old, CO USA</p>
+    <Text strong>Full Stack developer with an eye for style and design; leveraging my skills to develop visually beautiful, user-friendly applications.
 
 Earned a certificate in full stack development from Denver University. Developed skills in JavaScript, CSS, React.js, Node.js, MongoDB, and MySQL. 
 
@@ -45,6 +29,14 @@ My background in Anthropology helps me create user-friendly applications with en
 I worked as part of a team of students to develop an E-Commerce, full stack React application that connects coders to hourly, contract work.   
 
 I am excited to demonstrate my new skills to build a successful career and presence in the Technology Industry.</Text>
+
+    </div>
+
+     
+    <div className="card-container">
+    <Tabs type="card">
+      <TabPane tab="Introduction" key="1">
+     
       </TabPane>
       <TabPane tab="General Information" key="2">
         <p>Education</p>
