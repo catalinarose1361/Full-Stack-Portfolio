@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavTabs from "./NavTabs";
 import { Layout } from 'antd';
-
+import Granim from 'react-granim'
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Connect from "./pages/Connect";
@@ -34,7 +34,9 @@ class PortfolioCont extends Component {
   render() {
     return (
         <Layout className="layout">
+
         <Header>
+          
           
           <NavTabs
           currentPage={this.state.currentPage}

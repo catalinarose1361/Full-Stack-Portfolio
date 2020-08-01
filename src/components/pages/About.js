@@ -1,10 +1,16 @@
 import React from "react";
-import { Tabs } from 'antd';
-import { Avatar } from 'antd';
+import { Avatar, Tabs, Row, Col, Card, Meta } from 'antd';
 import profilePic from "../../images/profile-pictures/IMG_3001.png"
-import { Typography } from 'antd';
+import fullStackPic from "../../images/Document Screenshots/fullStack.png"
+import fullStackCert from "../../documents/certificate.pdf"
+import pythonCert from "../../documents/CertificateOfCompletion_Learning Python.pdf"
+import resumeFormat from "../../documents/resume.formatted.pdf"
+import { Typography } from 'antd'
+import resumePic from "../../images/Document Screenshots/resume.png"
+import pythonPic from "../../images/Document Screenshots/python.png"
 
-const { Text } = Typography;
+const { Text } = Typography
+const { Title } = Typography
 
 const { TabPane } = Tabs;
 const About = () => (
@@ -12,13 +18,13 @@ const About = () => (
 
     <>
 
-    <h3>Catalina Williams</h3>
-   
-    <div>
-
-    <Avatar size={100}src={profilePic} />
-    <p>27 Years Old, CO USA</p>
-    <Text strong>Full Stack developer with an eye for style and design; leveraging my skills to develop visually beautiful, user-friendly applications.
+    
+    <Row>
+    <Col span={18} push={6}>
+    <div className="card-container">
+        <Tabs type="card">
+          <TabPane tab="Introduction" key="1">
+          <Text keyboard>Full Stack developer with an eye for style and design; leveraging my skills to develop visually beautiful, user-friendly applications.
 
 Earned a certificate in full stack development from Denver University. Developed skills in JavaScript, CSS, React.js, Node.js, MongoDB, and MySQL. 
 
@@ -29,52 +35,85 @@ My background in Anthropology helps me create user-friendly applications with en
 I worked as part of a team of students to develop an E-Commerce, full stack React application that connects coders to hourly, contract work.   
 
 I am excited to demonstrate my new skills to build a successful career and presence in the Technology Industry.</Text>
-
-    </div>
-
-     
-    <div className="card-container">
-    <Tabs type="card">
-      <TabPane tab="Introduction" key="1">
-     
-      </TabPane>
-      <TabPane tab="General Information" key="2">
-        <p>Education</p>
-        <p>Technologies</p>
-        <p>Skills</p>
-      </TabPane>
-      <TabPane tab="Download Credentials" key="3">
-      <a class="button is-inverted" href="https://github.com/catalinarose1361">
+          </TabPane>
+          <TabPane tab="Download Documents" key="2">
+              <Row>
+          <Card 
+      hoverable
+      style={{width: 250}}
+      cover={ <img alt={"certification"} src={fullStackPic} /> }
+      >
+  
+    
+          <a class="button is-inverted" href={fullStackCert} download>
 
 <span class="icon">
 
-<i class="fab fa-github"></i>
+    <i class="fas fa-file-download"></i>
 
-</span>
+    </span>
 
-<span>GITHUB PROFILE</span>
-
+<span>DOWNLOAD CERTIFICATION</span>
+        
 </a>
+    </Card>   
+          <Card 
+      hoverable
+      style={{width: 250}}
+      cover={ <img alt={"certification"} src={resumePic} /> }
+      >
+  
+    
+          <a class="button is-inverted" href={resumeFormat} download>
 
-<a class="button is-inverted" href="resume2.pdf" download>
+<span class="icon">
 
-  <span class="icon">
+    <i class="fas fa-file-download"></i>
 
-      <i class="fas fa-file-download"></i>
+    </span>
 
-      </span>
-
-  <span>DOWNLOAD RESUME</span>
-
+<span>DOWNLOAD RESUME</span>
+        
 </a>
-      </TabPane>
-      <TabPane tab="Hobbies and Interests" key="4">
-        <p>Content of Tab Pane 3</p>
-        <p>Content of Tab Pane 3</p>
-        <p>Content of Tab Pane 3</p>
-      </TabPane>
-    </Tabs>
-  </div>
+    </Card>   
+      
+          <Card 
+      hoverable
+      style={{width: 250}}
+      cover={ <img alt={"certification"} src={pythonPic} /> }
+      >
+  
+    
+          <a class="button is-inverted" href={pythonCert} download>
+
+<span class="icon">
+
+    <i class="fas fa-file-download"></i>
+
+    </span>
+
+<span>DOWNLOAD CERTIFICATION</span>
+        
+</a>
+    </Card>  
+    </Row> 
+
+
+ 
+          </TabPane>
+        </Tabs>
+    </div>
+   
+    </Col>
+    <Col span={6} pull={18}>
+    <Avatar size={200}src={profilePic} />
+    <h3>Catalina Williams</h3>
+    <h3>Full Stack Web Developer</h3>
+    <h3>27 Years Old</h3>
+    </Col>
+  </Row>
+   
+  
   </>
 );
 

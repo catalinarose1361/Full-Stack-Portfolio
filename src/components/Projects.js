@@ -13,7 +13,7 @@ function Projects(props) {
    
     <Card 
       hoverable
-      style={{ width: 250 }}
+      style={{width: 250}}
       cover={
         <Carousel afterChange={onChange}>
     <div>
