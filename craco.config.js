@@ -8,46 +8,31 @@ module.exports = {
             lessLoaderOptions: {
               lessOptions: {
                 modifyVars: { 
-                  '@primary-color': '#1890ff' // primary color for all components
-//                   '@link-color': '#1890ff', // link color
-// '@success-color': '#52c41a' // success state color
-// @warning-color: #faad14; // warning state color
-// @error-color: #f5222d; // error state color
+                  '@primary-color': '#7f6f70', // primary color for all components
+                  '@link-color': '#574647', // link color
+                 
 // @font-size-base: 14px; // major text font size
-// @heading-color: rgba(0, 0, 0, 0.85); // heading text color
-// @text-color: rgba(0, 0, 0, 0.65); // major text color
-// @text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
-// @disabled-color: rgba(0, 0, 0, 0.25); // disable state color
-// @border-radius-base: 2px; // major border radius
-// @border-color-base: #d9d9d9; // major border color
-// @box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
-//   0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
-                    // // primary color for all components
-                    // '@primary-color': '#1890ff';
-                    // // link color
-                    // '@link-color': '',
-                    // // major text font size
-                    // '@font-size-base': '',
-                    // // heading text color
-                    //  '@heading-color': '',
-                    //  // major text color
-                    //  '@text-color': '',
-                    //  // secondary text color
-                    //  '@text-color-secondary': '',
-                    //  // major border radius
-                    //  '@border-radius-base': '2px',
-                    //  // major border color
-                    //  '@border-color-base' : '',
-                    //  // major shadow for layers
-                    // '@box-shadow-base': '',
-                    // //
-                    // '@layout-header-color': '',
-                    // '@layout-body-background': '',
-                    // // Base background color for most components
-                    // '@component-background': '',
-                    //   // major shadow for layers
-                    //   // Background color for `<body>`
-                    //     '@body-background': ''
+                  '@heading-color': '#d1b8bb', // heading text color
+                  '@text-color': '#000000', // major text color
+                  '@text-color-secondary': '#ffffff', // secondary text color
+                  // Layout
+                  '@layout-body-background': '#e5e5e5',
+                  '@layout-header-background': '#d1b8bb',
+                  '@layout-header-height': '64px',
+                  '@layout-header-padding': '0 50px',
+                  '@layout-header-color': '@text-color',
+                  '@layout-footer-padding': '24px 50px',
+                  '@layout-footer-background': '@layout-body-background',
+// @layout-sider-background: @layout-header-background;
+// @layout-trigger-height: 48px;
+// @layout-trigger-background: #002140;
+// @layout-trigger-color: #fff;
+// @layout-zero-trigger-width: 36px;
+// @layout-zero-trigger-height: 42px;
+// // Layout light theme
+// @layout-sider-background-light: #fff;
+// @layout-trigger-background-light: #fff;
+// @layout-trigger-color-light: @text-color;
              },
                 javascriptEnabled: true,
               },
