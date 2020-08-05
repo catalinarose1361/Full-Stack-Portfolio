@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavTabs from "./NavTabs";
 import { Layout } from 'antd';
-import Granim from 'react-granim'
+
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Connect from "./pages/Connect";
@@ -33,23 +33,24 @@ class PortfolioCont extends Component {
 
   render() {
     return (
-        <Layout className="layout">
-
-        <Header>
-          
-          
+      <Layout>
+       
           <NavTabs
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
-        />
-        </Header>
+          />
+          
+          
+      
+        <Layout className="layout">
+          <Header></Header>
         <Content style={{ padding: '0 50px' }}>
         
         {this.renderPage()}
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
       </Layout>
-   
+   </Layout>
     )
   }
 }

@@ -1,16 +1,15 @@
 import React from "react";
-import {  Menu } from 'antd'
-import { Typography } from 'antd'
-import Granim from 'react-granim'
+import {  Layout, Menu} from 'antd'
+const { Sider } = Layout;
 
 
-const { Title } = Typography;
 
 function NavTabs(props) {
   return (
    
 <>
-    <Menu style={{ width: 300  }} mode="horizontal">
+    <Sider>
+    <Menu style={{ width: 200 }} mode="vertical-right">
       <Menu.Item className="nav-item">
         <a
           href="#about"
@@ -43,7 +42,7 @@ function NavTabs(props) {
     
     
     </Menu>
-    
+    </Sider>
   </>
   );
 }
