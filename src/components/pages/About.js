@@ -31,7 +31,7 @@ const About = () => (
           <Text  level={4}strong> Eager to join a team of proffessionals and begin an exciting career</Text>
           </Space>
           </TabPane>
-          <TabPane tab="Download Documents" key="2">
+          <TabPane tab="Documents" key="2">
               <Row>
           <Card 
       hoverable

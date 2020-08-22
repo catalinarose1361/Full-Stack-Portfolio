@@ -17,13 +17,13 @@ function Projects(props) {
       cover={
         <Carousel afterChange={onChange}>
     <div>
-    <img alt={'project screenshots'} width={250} src={props.src.image1}></img>
+    <img alt={'project screenshots'} width={300} src={props.src.image1}></img>
     </div>
     <div>
-    <img alt={'project screenshots'} width={250} src={props.src.image2}></img>
+    <img alt={'project screenshots'} width={300} src={props.src.image2}></img>
     </div>
     <div>
-    <img alt={'project screenshots'} width={250} src={props.src.image3}></img>
+    <img alt={'project screenshots'} width={300} src={props.src.image3}></img>
     </div>
     
   </Carousel>

@@ -1,5 +1,6 @@
 import React from "react";
 import { List, Typography } from "antd"
+import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined } from '@ant-design/icons';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -13,22 +14,32 @@ const Connect = () => (
  
 >
   <List.Item>
-<Text>Linkedin:
-</Text>
+    <Text> <LinkedinOutlined /> Linkedin: <a href="https://www.linkedin.com/in/catalinarwilliams/">CatalinaRWilliams</a>
+    </Text>
 
   </List.Item>
-  <Text>Github: </Text>
+  <Text> <GithubOutlined /> Github: <a href="Github: https://github.com/catalinarose1361">CatalinaRose1361</a> </Text>
   <List.Item>
 
 
   </List.Item>
   <Text>
-    Email:
+  <YahooOutlined />Email: <a class="button is-outlined" href="mailto:catalinarose@yahoo.com">
+
+ <span class="icon">
+
+    <i class="far fa-paper-plane"></i>
+
+ </span>
+
+<span>catalinarose@yahoo.com</span>
+
+</a>
   </Text>
   <List.Item>
   </List.Item>
   <Text>
-    Cell Phone:
+  <PhoneOutlined />Cell Phone: <h1> 1 (719) 749-8070</h1>
   </Text>
   <List.Item>
 

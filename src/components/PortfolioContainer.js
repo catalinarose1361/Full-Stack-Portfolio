@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavTabs from "./NavTabs";
-import { Layout } from 'antd';
+import { Layout, PageHeader } from 'antd';
 
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -43,8 +43,12 @@ class PortfolioCont extends Component {
           
       
         <Layout className="layout">
-          <Header></Header>
-        <Content style={{ padding: '0 50px' }}>
+          <Header>
+            <PageHeader >
+              Catalina Rose Williams
+            </PageHeader>
+          </Header>
+        <Content style={{ padding: '0px' }}>
         
         {this.renderPage()}
         </Content>

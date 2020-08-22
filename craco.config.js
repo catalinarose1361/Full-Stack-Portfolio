@@ -26,7 +26,9 @@ module.exports = {
                   '@layout-sider-background': '@layout-header-background',
                   // Base background color for most components
                   '@component-background': '#7f6f70',
-                  '@layout-sider-background-light': '#d1b8bb'
+                  '@layout-sider-background-light': '#d1b8bb',
+                  '@layout-trigger-height': '48px',
+                  // '@layout-zero-trigger-height': '2px'
 // @layout-trigger-height: 48px;
 // @layout-trigger-background: #002140;
 // @layout-trigger-color: #fff;
