@@ -100,12 +100,7 @@ const About = () => (
     </div>
    
     </Col>
-    <Col span={6} pull={18}>
-    <Avatar size={200}src={profilePic} />
-    <h3>Catalina Williams</h3>
-    <h3>Full Stack Web Developer</h3>
-    <h3>27 Years Old</h3>
-    </Col>
+    
   </Row>
    
   

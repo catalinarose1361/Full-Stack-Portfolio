@@ -154,8 +154,7 @@ class Portfolio extends Component {
 				
 					
 			<div className="jumbotron text-center">
-							<h1 className="display-4">Catalina's Portfolio</h1>
-							
+				
 							
 							
 						</div>

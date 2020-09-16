@@ -8,26 +8,28 @@ module.exports = {
             lessLoaderOptions: {
               lessOptions: {
                 modifyVars: { 
-                  '@primary-color': '#7f6f70', // primary color for all components
-                  '@link-color': '#574647', // link color
+                  '@primary-color': '#00887a', // primary color for all components
+                  '@link-color': '#f1b351', // link color
                  
 // @font-size-base: 14px; // major text font size
-                  '@heading-color': '#ffffff', // heading text color
-                  '@text-color': '#000000', // major text color
-                  '@text-color-secondary': '#7f6f70', // secondary text color
+                  '@heading-color': 'black', // heading text color
+                  '@text-color': 'black', // major text color
+                  '@text-color-secondary': 'black', // secondary text color
                   // Layout
-                  '@layout-body-background': '#e5e5e5',
-                  '@layout-header-background': '#d1b8bb',
+                  '@layout-body-background': '#ffffff',
+                  '@layout-header-background': '#ffffff',
                   '@layout-header-height': '64px',
                   '@layout-header-padding': '0 50px',
-                  '@layout-header-color': '@text-color',
+                  '@layout-header-color': '#ffffff',
                   '@layout-footer-padding': '0 50px',
-                  '@layout-footer-background': '#574647',
-                  '@layout-sider-background': '@layout-header-background',
+                  '@layout-footer-background': '#ffffff',
+                  '@layout-sider-background': '#00887a',
                   // Base background color for most components
-                  '@component-background': '#7f6f70',
+                  '@component-background': '#77a6f7',
                   '@layout-sider-background-light': '#d1b8bb',
-                  '@layout-trigger-height': '48px',
+                  '@layout-trigger-height': '300px',
+                  '@menu-bg': '@layout-sider-background',
+                  // '@border-color-base': 'hsv(0, 0, 85%)',  // base border outline a component
                   // '@layout-zero-trigger-height': '2px'
 // @layout-trigger-height: 48px;
 // @layout-trigger-background: #002140;

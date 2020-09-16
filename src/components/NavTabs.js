@@ -1,5 +1,6 @@
 import React from "react";
-import {  Layout, Menu} from 'antd'
+import { Avatar, Layout, Menu} from 'antd'
+import profilePic from "../images/profile-pictures/IMG_3001.png"
 const { Sider } = Layout;
 
 
@@ -31,17 +32,29 @@ function NavTabs(props) {
      
       <Menu.Item className="nav-item">
         <a
-          href="#contact"
+          href="#connect"
           onClick={() => props.handlePageChange("Connect")}
           className={props.currentPage === "Connect" ? "nav-link active" : "nav-link"}
         >
           Connect
         </a>
       </Menu.Item>
+      <Menu.Item className="nav-item">
+        <a
+          href="#skills"
+          onClick={() => props.handlePageChange("Skills")}
+          className={props.currentPage === "Skills" ? "nav-link active" : "nav-link"}
+        >
+          Skill Timeline
+        </a>
+      </Menu.Item>
       
     
     
     </Menu>
+    <Avatar size={150}src={profilePic} />
+    <h3 style={{textAlign: 'center'}}>Catalina Williams</h3>
+  
     </Sider>
   </>
   );

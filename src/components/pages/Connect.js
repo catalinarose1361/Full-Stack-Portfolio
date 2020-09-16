@@ -1,10 +1,7 @@
 import React from "react";
 import { List, Typography } from "antd"
 import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined } from '@ant-design/icons';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 const { Text } = Typography
 const Connect = () => (
   <List
