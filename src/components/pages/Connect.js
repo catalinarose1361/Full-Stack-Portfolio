@@ -11,11 +11,11 @@ const Connect = () => (
  
 >
   <List.Item>
-    <Text> <LinkedinOutlined /> Linkedin: <a href="https://www.linkedin.com/in/catalinarwilliams/">CatalinaRWilliams</a>
+    <Text> <LinkedinOutlined /> Linkedin: <a href="https://www.linkedin.com/in/catalinarwilliams/"><LinkedinOutlined /></a>
     </Text>
 
   </List.Item>
-  <Text> <GithubOutlined /> Github: <a href="Github: https://github.com/catalinarose1361">CatalinaRose1361</a> </Text>
+  <Text> <GithubOutlined /> Github: <a href="Github: https://github.com/catalinarose1361"></a> </Text>
   <List.Item>
 
 

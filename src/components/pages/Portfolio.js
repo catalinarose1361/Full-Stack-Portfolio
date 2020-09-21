@@ -1,40 +1,40 @@
 import React, { Component } from "react";
 import Projects from "../Projects"
-import { List } from 'antd';
+import { List, Row, Grid, Col } from 'antd';
 // Password Generator Screenshots Import
-import passGenPic1 from "../../images/portfolio-project-screenshots/password-gen/Screenshot1.png"
-import passGenPic2 from "../../images/portfolio-project-screenshots/password-gen/Screenshot2.png"
-import passGenPic3 from "../../images/portfolio-project-screenshots/password-gen/Screenshot3.png"
+import passGenPic1 from "../../images/Password Generator/Screenshot1.png"
+import passGenPic2 from "../../images//Password Generator/Screenshot2.png"
+import passGenPic3 from "../../images//Password Generator/Screenshot3.png"
 
 // Weather Application Screenshots Import
-import worldWeatherPic1 from "../../images/portfolio-project-screenshots/world-weather/Screenshot1.png"
-import worldWeatherPic2 from "../../images/portfolio-project-screenshots/world-weather/Screenshot2.png"
-import worldWeatherPic3 from "../../images/portfolio-project-screenshots/world-weather/Screenshot3.png"
+import worldWeatherPic1 from "../../images/World Weather/Screenshot1.png"
+import worldWeatherPic2 from "../../images/World Weather/Screenshot2.png"
+import worldWeatherPic3 from "../../images/World Weather/Screenshot3.png"
 
 // Note Taker Screenshot Import
-import noteTakerPic1 from "../../images/portfolio-project-screenshots/note-taker/Screenshot1.png"
-import noteTakerPic2 from "../../images/portfolio-project-screenshots/note-taker/Screenshot2.png"
-import noteTakerPic3 from "../../images/portfolio-project-screenshots/note-taker/Screenshot3.png"
+import noteTakerPic1 from "../../images/Note-Taker/Screenshot1.png"
+import noteTakerPic2 from "../../images/Note-Taker/Screenshot2.png"
+import noteTakerPic3 from "../../images/Note-Taker/Screenshot3.png"
 
 // Budget Track Screenshot Import
-import budgetTrackPic1 from "../../images/portfolio-project-screenshots/budget-track/Screenshot1.png"
-import budgetTrackPic2 from "../../images/portfolio-project-screenshots/budget-track/Screenshot2.png"
-import budgetTrackPic3 from "../../images/portfolio-project-screenshots/budget-track/Screenshot3.png"
+import budgetTrackPic1 from "../../images/Budget Track/Screenshot1.png"
+import budgetTrackPic2 from "../../images/Budget Track/Screenshot2.png"
+import budgetTrackPic3 from "../../images/Budget Track/Screenshot3.png"
 
 // Streamer Screenshot Import
-import streamerPic1 from "../../images/portfolio-project-screenshots/streamer/Screenshot1.png"
-import streamerPic2 from "../../images/portfolio-project-screenshots/streamer/Screenshot2.png"
-import streamerPic3 from "../../images/portfolio-project-screenshots/streamer/Screenshot3.png"
+import streamerPic1 from "../../images/Streamer/Screenshot1.png"
+import streamerPic2 from "../../images/Streamer/Screenshot2.png"
+import streamerPic3 from "../../images/Streamer/Screenshot3.png"
 
 // Fit Track Screenshot Import
-import fitTrackPic1 from "../../images/portfolio-project-screenshots/fit-track/Screenshot1.png"
-import fitTrackPic2 from "../../images/portfolio-project-screenshots/fit-track/Screenshot2.png"
-import fitTrackPic3 from "../../images/portfolio-project-screenshots/fit-track/Screenshot3.png"
+import fitTrackPic1 from "../../images/Fitness Tracker/Screenshot1.png"
+import fitTrackPic2 from "../../images/Fitness Tracker/Screenshot1.png"
+import fitTrackPic3 from "../../images/Fitness Tracker/Screenshot1.png"
 
 // Coding Corgi Screenshot Import
-import codingCorgiPic1 from "../../images/portfolio-project-screenshots/coding-corgi/Screenshot1.png"
-import codingCorgiPic2 from "../../images/portfolio-project-screenshots/coding-corgi/Screenshot2.png"
-import codingCorgiPic3 from "../../images/portfolio-project-screenshots/coding-corgi/Screenshot3.png"
+import codingCorgiPic1 from "../../images/coding-corgis/Screenshot1.png"
+import codingCorgiPic2 from "../../images/coding-corgis/Screenshot1.png"
+import codingCorgiPic3 from "../../images/coding-corgis/Screenshot1.png"
 
 
 
@@ -143,6 +143,20 @@ const ProjectData = [
     description: "Track your expenses and enter data online and offline. Front-End: jQuery, HTML, CSS . Back-End: IndexedDB, MongoDB, Mongoose",
     technologies: ["jQuery", "HTML5", "CSS3", "IndexedDB", "Mongoose"]
   },
+  {
+    id: 8,
+    name: "HTML Portfolio",
+    image: {
+      'image1': budgetTrackPic1, 
+      'image2': budgetTrackPic2, 
+      'image3': budgetTrackPic3 
+       
+    },
+    github: "https://github.com/catalinarose1361/Budget-Track",
+    deployed: "https://catalinas-budget-tracker.herokuapp.com/",
+    description: "Track your expenses and enter data online and offline. Front-End: jQuery, HTML, CSS . Back-End: IndexedDB, MongoDB, Mongoose",
+    technologies: ["jQuery", "HTML5", "CSS3", "IndexedDB", "Mongoose"]
+  },
 ];
 
 class Portfolio extends Component {
@@ -150,21 +164,18 @@ class Portfolio extends Component {
 
 	render() {
 		return (
-			<div className="container">
+		
 				
 					
-			<div className="jumbotron text-center">
-				
-							
-							
-						</div>
-						<List
-                        grid={{ gutter: 16, column: 3 }}
+		
+      <List
+                        
+                        grid={{ gutter: 20,  column: 3 }}
                         dataSource={ProjectData}
                         renderItem={item => (
-
-                            <List.Item>
-                               
+                  
+                            <List.Item justify="center">
+                               <Col>
                                            <Projects
                                                 key={item.id}
                                                 name={item.name}
@@ -175,14 +186,16 @@ class Portfolio extends Component {
                                                 technology={item.technologies}
                                                 
                                             />
-                               
+                                        </Col>
                             </List.Item>
+
+                            
                         )}
 						
 						/>
+            
 					
-
-			</div>
+		
 		);
 	}
 }

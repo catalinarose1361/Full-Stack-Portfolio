@@ -1,17 +1,30 @@
 import React from "react";
-import { Avatar, Layout, Menu} from 'antd'
-import profilePic from "../images/profile-pictures/IMG_3001.png"
+import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined } from '@ant-design/icons';
+import { Layout, Menu, Typography, Row, Col} from 'antd'
+import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 const { Sider } = Layout;
+const { SubMenu } = Menu;
+const { Text } = Typography
 
-
+//  state = {
+//     current: 'mail'
+//   }
+//   handleClick = e => {
+//     console.log('click ', e);
+//     this.setState({ current: e.key });
+//   };
 
 function NavTabs(props) {
+  // const { current } = this.state;
   return (
    
 <>
-    <Sider>
-    <Menu style={{ width: 200 }} mode="vertical-right">
-      <Menu.Item className="nav-item">
+    {/* <Sider> */}
+    <Row justify="center">
+      <Col  span={12} offset={6}>
+
+    <Menu inlineIndent={50} onClick={props.handleClick} selectedKeys={[props.current]} mode="horizontal">
+      <Menu.Item key="mail" icon={<MailOutlined />} className="nav-item">
         <a
           href="#about"
           onClick={() => props.handlePageChange("About")}
@@ -20,7 +33,7 @@ function NavTabs(props) {
           About
         </a>
       </Menu.Item>
-      <Menu.Item className="nav-item">
+      <Menu.Item key="app" icon={<AppstoreOutlined />} className="nav-item">
         <a
           href="#portfolio"
           onClick={() => props.handlePageChange("Portfolio")}
@@ -30,7 +43,7 @@ function NavTabs(props) {
         </a>
       </Menu.Item>
      
-      <Menu.Item className="nav-item">
+      {/* <Menu.Item className="nav-item">
         <a
           href="#connect"
           onClick={() => props.handlePageChange("Connect")}
@@ -38,8 +51,17 @@ function NavTabs(props) {
         >
           Connect
         </a>
-      </Menu.Item>
-      <Menu.Item className="nav-item">
+      </Menu.Item> */}
+      <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Connect">
+     
+            <Menu.Item key="setting:1"><a href="https://www.linkedin.com/in/catalinarwilliams/"><LinkedinOutlined style={{ fontSize: '32px' }} /></a><Text>CatalinaRWilliams</Text></Menu.Item>
+            <Menu.Item key="setting:2"><a href="https://github.com/catalinarose1361"><GithubOutlined style={{ fontSize: '32px' }} /></a><Text>CatalinaRose1361</Text></Menu.Item>
+            <Menu.Item key="setting:2"><a href="mailto:catalinarose@yahoo.com"><YahooOutlined style={{ fontSize: '32px' }} /></a><Text>CatalinaRose@yahoo.com</Text></Menu.Item>
+            <Menu.Item key="setting:2"><PhoneOutlined style={{ fontSize: '32px' }} /><Text>(719) 749-8070</Text></Menu.Item>
+  
+        
+        </SubMenu>
+      {/* <Menu.Item className="nav-item">
         <a
           href="#skills"
           onClick={() => props.handlePageChange("Skills")}
@@ -47,15 +69,16 @@ function NavTabs(props) {
         >
           Skill Timeline
         </a>
-      </Menu.Item>
+      </Menu.Item> */}
       
     
     
     </Menu>
-    <Avatar size={150}src={profilePic} />
-    <h3 style={{textAlign: 'center'}}>Catalina Williams</h3>
+      </Col>
+    </Row>
+
   
-    </Sider>
+    {/* </Sider> */}
   </>
   );
 }

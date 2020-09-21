@@ -1,5 +1,5 @@
 import React from "react";
-import {  Button, Collapse, Card, Carousel, List, Typography } from 'antd'
+import {  Button, Collapse, Card, Carousel, List, Typography, Col } from 'antd'
 import { CaretRightOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 const { Panel } = Collapse;
@@ -10,20 +10,20 @@ function Projects(props) {
   }
   return (
     
-   
+  
     <Card 
       hoverable
-      style={{width: 300}}
+      // style={{width: 300}}
       cover={
         <Carousel afterChange={onChange}>
     <div>
-    <img alt={'project screenshots'} width={300} src={props.src.image1}></img>
+    <img alt={'project screenshots'} width={500} src={props.src.image1}></img>
     </div>
     <div>
-    <img alt={'project screenshots'} width={300} src={props.src.image2}></img>
+    <img alt={'project screenshots'} width={500} src={props.src.image2}></img>
     </div>
     <div>
-    <img alt={'project screenshots'} width={300} src={props.src.image3}></img>
+    <img alt={'project screenshots'} width={500} src={props.src.image3}></img>
     </div>
     
   </Carousel>
@@ -71,7 +71,8 @@ function Projects(props) {
     </Collapse>
     
         
-    </Card>      
+    </Card> 
+      
       
     
 
