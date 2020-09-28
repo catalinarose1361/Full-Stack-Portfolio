@@ -13,7 +13,7 @@ function Projects(props) {
   
     <Card 
       hoverable
-      // style={{width: 300}}
+      style={{textAlign: "center"}}
       cover={
         <Carousel afterChange={onChange}>
     <div>
@@ -36,8 +36,8 @@ function Projects(props) {
           
     
            
-    <Collapse
-     bordered={false} 
+    <Collapse style={{textAlign: "left"}}
+     bordered={true} 
     
      expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
      className="site-collapse-custom-collapse"
