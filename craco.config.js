@@ -16,7 +16,8 @@ module.exports = {
                   '@layout-header-color': '@layout-body-background', // 
                   '@menu-bg': '@layout-header-background', //nav menu background color
                   '@link-color': '@primary-color', // link color // yellow
-                  '@menu-popup-bg' : '@primary-color',
+                  '@menu-popup-bg' : '@layout-body-background',
+                  '@dropdown-menu-submenu-disabled-bg': '@layout-body-background'
                   // '@heading-color': '@primary-color', // heading text color //purple
                   // '@font-size-base': '20px', // major text font size
 //                   
