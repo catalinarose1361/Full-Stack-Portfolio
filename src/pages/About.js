@@ -1,39 +1,37 @@
 import React from "react";
-import { Typography, Avatar, Row, Col } from 'antd';
-import profilePic from "../images/profile-pictures/IMG_3001.png";       
+import { Typography, Avatar, Row, Col, Image } from 'antd';
+import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
 
 const { Title, Paragraph, Text } = Typography;
 
 const About = () => (
   
-    <div id="aboutMeContainer" style={{textAlign: "center"}}>
+    <div id="aboutMeContainer" style={{textAlign: "center", marginTop: '100px'}}>
 
-        <Row justify="center">
+        <Row  justify="center">
+            <Col span={12}>
+                <div>
+                <img width={300} src={profilePic} alt="profilepic" />
 
-            <Avatar style={{textAlign: 'center'}} size={150}src={profilePic} />
+                </div>
+            </Col>
                
-        </Row>
-    
-        <Row justify="center">
-    
-            <Title>Allow me to introduce myself,</Title>
+   
 
-        </Row>
-    
-        <Row justify="center">
-
-            <Col >
+            <Col span={12} >
+                <Title>Introducing Catalina,</Title>
       
                 <Typography>
 
                     <Paragraph  bold>
-                        <h3 style={{textAlign: 'center'}}>Catalina Williams</h3>
+                        {/* <h3 style={{textAlign: 'center'}}>Catalina Williams</h3> */}
    
                         <Text maxLength={15}>Catalina Williams is a Full 
 
-                        Full Stack Web developer on a mission to turn her Passion for Coding into a career. She
+                        Full Stack Web developer working towards a goal to turn her Passion for Coding into a career. Catalina has experience building full stack web applications that start off as nothing more than idea.
+                        She 
 
-                        graduated Denver University's Coding Bootcamp program, in April 2020 . 
+                        Graduating Denver University's Coding Bootcamp program in April 2020, Catalina has developed the skills nessasary to build full stack web applications.
 
                         Post-Bootcamp I've been keeping my skills sharp by continuing to update my portfolio projects, and learning new coding languages. 
 
@@ -41,7 +39,7 @@ const About = () => (
 
                         </Text>
 
-                        <Title level={4}>Thank you for taking the time to visit my portfolio website! If you would like to look at my work, please naviagate to the "Portfolio" section. If you have any feedback on my portfolio, or know of an opportunity that would be a good fit please naviage to the "Connect" Section</Title>
+                        
 
                     </Paragraph>
                
