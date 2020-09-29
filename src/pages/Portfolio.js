@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from "../components/Projects"
-import { List, Row, Grid, Col } from 'antd';
+import { List, Col } from 'antd';
+
 // Password Generator Screenshots Import
 import passGenPic1 from "../images/Password Generator/Screenshot1.png"
 import passGenPic2 from "../images//Password Generator/Screenshot2.png"
@@ -40,9 +41,6 @@ import codingCorgiPic3 from "../images/coding-corgis/Screenshot3.png"
 import htmlPic1 from "../images/HTML Portfolio/Screenshot1.png"
 import htmlPic2 from "../images/HTML Portfolio/Screenshot2.png"
 import htmlPic3 from "../images/HTML Portfolio/Screenshot3.png"
-
-
-
 
 const ProjectData = [
   {
@@ -166,41 +164,37 @@ const ProjectData = [
 
 class Portfolio extends Component {
 	
-
 	render() {
-		return (
-		
-				
-					
-		
-      <List
-                        
-                        grid={{ gutter: 20,  column: 3 }}
-                        dataSource={ProjectData}
-                        renderItem={item => (
-                  
-                            <List.Item justify="center">
-                               <Col>
-                                           <Projects
-                                                key={item.id}
-                                                name={item.name}
-                                                github={item.github}
-                                                src={item.image}
-                                                deployed={item.deployed}
-                                                description={item.description}
-                                                technology={item.technologies}
-                                                
-                                            />
-                                        </Col>
-                            </List.Item>
 
-                            
-                        )}
-						
-						/>
-            
-					
+	  return (
 		
+    <List                  
+      grid={{ gutter: 20,  column: 3 }}
+      dataSource={ProjectData}
+      renderItem={item => (
+                  
+        <List.Item justify="center">
+
+          <Col>
+
+            <Projects
+              key={item.id}
+              name={item.name}
+              github={item.github}
+              src={item.image}
+              deployed={item.deployed}
+              description={item.description}
+              technology={item.technologies}                                  
+            />
+
+          </Col>
+
+        </List.Item>
+                     
+       )}
+						
+		/>
+    	
 		);
 	}
 }

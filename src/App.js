@@ -1,9 +1,9 @@
 import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
+
 import Routes from "./Routes.js";
 import { BrowserRouter as Router, Switch, Route, withRouter } from "react-router-dom"
 import NavBar from "./components/NavTabs"
-
+import FooterComp from "./components/FooterComp"
 // const App = () => <PortfolioContainer />;
 
 // export default App;
@@ -11,12 +11,13 @@ import NavBar from "./components/NavTabs"
 
 const App = ({ location }) => {
   return (
-    <div>
+    <div style={{textAlign: 'center'}}>
       
       {location.pathname !== '/' &&  <NavBar />}
      
         <Routes />
-       
+
+      {location.pathname === '/' && <FooterComp />}
 
       
     </div>
