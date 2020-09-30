@@ -19,14 +19,15 @@ const About = () => (
    
 
             <Col span={12} >
-                <Title>Introducing Catalina,</Title>
+                <Title>Pleased to meet you,</Title>
       
                 <Typography>
 
                     <Paragraph  bold>
                         {/* <h3 style={{textAlign: 'center'}}>Catalina Williams</h3> */}
    
-                        <Text maxLength={15}>Catalina Williams is a Full 
+                        <Text maxLength={15}>My name is Catalina Williams, I'm a Full-Stack Web Developer from Colorado. Thank you for taking the time to visit my portfolio site. 
+                        
 
                         Full Stack Web developer working towards a goal to turn her Passion for Coding into a career. Catalina has experience building full stack web applications that start off as nothing more than idea.
                         She 

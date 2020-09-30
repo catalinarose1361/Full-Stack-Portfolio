@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LoginOutlined } from '@ant-design/icons';
-import logo from '../images/Icons/logo_transparent_background.png';
+import logo from '../images/Icons/logo_size.jpg';
 
 
 

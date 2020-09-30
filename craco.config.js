@@ -21,7 +21,10 @@ module.exports = {
                   // '@dropdown-menu-bg': '@layout-body-background',
                   '@card-head-extra-color': 'layout-body-background',
                   '@primary-5' : '@primary-color',
-                  '@border-style-base': 'none'
+                  '@border-style-base': 'none',
+                  '@carousel-dot-height': '10px',
+                  '@card-head-color': '@layout-body-background'
+                  // '@text-color': '@white'
                   // '@dropdown-menu-submenu-disabled-bg': '@layout-body-background'
                   // '@heading-color': '@primary-color', // heading text color //purple
                   // '@font-size-base': '20px', // major text font size

@@ -33,7 +33,7 @@ function Projects(props) {
         <Row >
           <Col span={24}>
 
-  <Meta style={{color: 'white'}} title={props.name}  />
+  <Meta style={{textColor: 'white'}} title={props.name}  />
           </Col>
           
          
