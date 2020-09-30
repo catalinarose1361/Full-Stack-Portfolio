@@ -23,7 +23,9 @@ module.exports = {
                   '@primary-5' : '@primary-color',
                   '@border-style-base': 'none',
                   '@carousel-dot-height': '10px',
-                  '@card-head-color': '@layout-body-background'
+                  '@card-head-color': '@layout-body-background', //heading text for card component
+                  // '@table-bg': '@layout-body-background'
+                  // '@list-customize-card-bg': '@layout-body-background'
                   // '@text-color': '@white'
                   // '@dropdown-menu-submenu-disabled-bg': '@layout-body-background'
                   // '@heading-color': '@primary-color', // heading text color //purple

@@ -32,9 +32,9 @@ const Skills = () => (
         
       <Col span={4}>
 
-        <Card>
+        {/* <Card> */}
 
-          <Divider orientation="left">Front-End Development</Divider>
+          <h2 orientation="left">Front-End Dev</h2>
 
           <List
           size="large"
@@ -43,15 +43,15 @@ const Skills = () => (
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
           />
 
-        </Card>
+        {/* </Card> */}
 
       </Col>
 
       <Col span={4}>
 
-        <Card>
+        
 
-          <Divider orientation="center">Back-End Development</Divider>
+          <h2 orientation="center">Back-End Dev</h2>
 
           <List
           size="large"
@@ -60,15 +60,15 @@ const Skills = () => (
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
           />
 
-        </Card>
+       
 
       </Col>
 
       <Col span={4}>
 
-        <Card>
+       
 
-          <Divider orientation="right">CSS Frameworks</Divider>
+          <h2 orientation="right">CSS Frameworks</h2>
 
           <List
           size="large"
@@ -77,15 +77,15 @@ const Skills = () => (
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
           />
 
-        </Card>
+        
 
       </Col>
 
       <Col span={4}>
 
-        <Card>
+        
 
-          <Divider orientation="right">Tools and Technologies</Divider>
+          <h2 orientation="right">Tools</h2>
 
           <List
           size="large"
@@ -94,15 +94,15 @@ const Skills = () => (
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
           />
 
-        </Card>
+       
 
       </Col>
 
       <Col span={4}>
 
-        <Card>
+       
 
-          <Divider orientation="right">Databases</Divider>
+          <h2 orientation="right">Databases</h2>
 
           <List
           size="large"
@@ -111,15 +111,15 @@ const Skills = () => (
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
           />
 
-        </Card>
+        
 
       </Col>
 
       <Col span={4}>
 
-        <Card>
+        
 
-          <Divider orientation="right">API Interaction</Divider>
+          <h2 orientation="right">API Interaction</h2>
 
           <List
           size="large"
@@ -128,7 +128,7 @@ const Skills = () => (
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
           />
 
-        </Card>
+        
 
       </Col>
      
