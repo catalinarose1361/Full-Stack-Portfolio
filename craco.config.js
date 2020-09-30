@@ -14,7 +14,7 @@ module.exports = {
                   '@layout-body-background': '#fffdf6', //darkest purple
                   '@layout-header-background': '@layout-body-background', //                 
                   '@layout-header-color': '@layout-body-background', // 
-                  '@menu-bg': '@layout-header-background', //nav menu background color
+                  '@menu-bg': '@layout-body-background', //nav menu background color
                   '@link-color': '@primary-color', // link color // yellow
                   '@menu-popup-bg' : '@layout-body-background',
                   '@collapse-content-bg' : '@layout-body-background',

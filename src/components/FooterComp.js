@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LogoutOutlined } from '@ant-design/icons';
+import { KeyOutlined } from '@ant-design/icons';
 
 function FooterComp () {
  
     return (
       
-      <div id="footer">
+      <div style={{ marginBottom: '50px'}} id="footer">
 
         <Link to="/about">
-
-          <LogoutOutlined style={{ fontSize: '80px' }} />
-          Enter
+        <KeyOutlined style={{ fontSize: '50px' }} />
+         
+          
 
         </Link>
 

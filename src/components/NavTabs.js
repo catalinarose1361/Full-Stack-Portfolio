@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
-import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined } from '@ant-design/icons';
+import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined } from '@ant-design/icons';
 import { Layout, Menu, Typography, Row } from 'antd'
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 
@@ -18,7 +18,7 @@ function NavTabs () {
 
         <Menu  inlineIndent={50}   mode="horizontal">
 
-          <Menu.Item  key="mail" icon={<MailOutlined />} className="nav-item">
+          <Menu.Item  key="mail" icon={<IdcardOutlined style={{ fontSize: '24px' }} />} className="nav-item">
 
             <NavLink 
               className="nav-link"
@@ -31,7 +31,7 @@ function NavTabs () {
 
           </Menu.Item>
 
-          <Menu.Item key="app" icon={<AppstoreOutlined />} className="nav-item">
+          <Menu.Item key="app" icon={<AppstoreOutlined style={{ fontSize: '24px' }} />} className="nav-item">
 
             <NavLink 
               className="nav-link"
@@ -43,7 +43,7 @@ function NavTabs () {
 
           </Menu.Item>
 
-          <Menu.Item key="app" icon={<AppstoreOutlined />} className="nav-item">
+          <Menu.Item key="app" icon={<ToolOutlined style={{ fontSize: '24px' }} />} className="nav-item">
 
             <NavLink 
               className="nav-link"
@@ -55,7 +55,7 @@ function NavTabs () {
 
           </Menu.Item>
      
-          <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Connect">
+          <SubMenu key="SubMenu" icon={<UserAddOutlined style={{ fontSize: '24px' }} />} title="Connect">
      
             <Menu.Item key="setting:1"><a href="https://www.linkedin.com/in/catalinarwilliams/"><LinkedinOutlined style={{ fontSize: '32px' }} /></a><Text>CatalinaRWilliams</Text></Menu.Item>
             <Menu.Item key="setting:2"><a href="https://github.com/catalinarose1361"><GithubOutlined style={{ fontSize: '32px' }} /></a><Text>CatalinaRose1361</Text></Menu.Item>

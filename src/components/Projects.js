@@ -16,7 +16,7 @@ function Projects(props) {
       hoverable
       style={{textAlign: "center"}}
       cover={
-        <Carousel afterChange={onChange}>
+        <Carousel dotPosition={'left'} afterChange={onChange}>
     <div>
     <img alt={'project screenshots'} width={500} src={props.src.image1}></img>
     </div>
