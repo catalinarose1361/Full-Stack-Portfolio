@@ -1,6 +1,7 @@
 import React from "react";
-import {  Button, Collapse, Card, Carousel, List, Typography, Col } from 'antd'
+import {  Button, Collapse, Card, Carousel, List, Typography, Col, Row } from 'antd'
 import { CaretRightOutlined } from '@ant-design/icons';
+import { GithubOutlined, DesktopOutlined, YahooOutlined, PhoneOutlined } from '@ant-design/icons';
 const { Meta } = Card;
 const { Panel } = Collapse;
 function Projects(props) {
@@ -29,7 +30,28 @@ function Projects(props) {
   </Carousel>
       }
       >
-  <Meta title={props.name}  />
+        <Row >
+          <Col span={24}>
+
+  <Meta style={{color: 'white'}} title={props.name}  />
+          </Col>
+          
+         
+
+        </Row>
+   <Row>
+     <Col span={12}>
+     <Button href={props.github} icon={<GithubOutlined style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
+         
+        </Button>
+     </Col>
+    
+     <Col span={12}>
+     <Button href={props.deployed} icon={<DesktopOutlined style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
+          
+        </Button>
+     </Col>
+     </Row>     
   
   
     

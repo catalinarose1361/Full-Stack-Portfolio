@@ -24,7 +24,7 @@ function NavTabs () {
               className="nav-link"
               to="/about"
                 // without this peice of code, Active link will always be highlighted
-                // isActive={() => window.location.pathname === "/"}
+                isActive={() => window.location.pathname === "/about"}
               activeClassName="active"
             > About 
             </NavLink>
@@ -36,6 +36,7 @@ function NavTabs () {
             <NavLink 
               className="nav-link"
               to="/portfolio"
+              isActive={() => window.location.pathname === "/portfolio"}
               activeClassName="active"
             > Portfolio
             </NavLink>
@@ -47,6 +48,7 @@ function NavTabs () {
             <NavLink 
               className="nav-link"
               to="/skills"
+              isActive={() => window.location.pathname === "/skills"}
               activeClassName="active"
             > Skills
             </NavLink>
@@ -69,7 +71,7 @@ function NavTabs () {
     </Row>
 
   );
-  
+
 }
 
 export default NavTabs;
