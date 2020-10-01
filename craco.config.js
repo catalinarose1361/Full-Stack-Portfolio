@@ -12,6 +12,7 @@ module.exports = {
                   '@primary-color': '#b72c2c', // primary color for all components //yellow
                   '@component-background': '#494949', // green
                   '@layout-body-background': '#fffdf6', //darkest purple
+                  '@font-size-base': '20px', // major text font size
                   '@layout-header-background': '@layout-body-background', //                 
                   '@layout-header-color': '@layout-body-background', // 
                   '@menu-bg': '@layout-body-background', //nav menu background color
