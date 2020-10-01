@@ -1,3 +1,4 @@
+// THIS PAGE MAY BE IMPLEMENTED IN FUTURE VERSIONS OF THIS APPLICATION
 // import fullStackPic from "../images/Document Screenshots/fullStack.png"
 // import fullStackCert from "../documents/certificate.pdf"
 // import pythonCert from "../documents/CertificateOfCompletion_Learning Python.pdf"
