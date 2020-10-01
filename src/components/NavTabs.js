@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
 import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined } from '@ant-design/icons';
-import { Layout, Menu, Typography, Row } from 'antd'
+import { Layout, Menu, Typography, Row, Col } from 'antd'
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
-
+import nameLogo from "../images/Icons/namelogo.jpg"
+import tagLine from "../images/Icons/tagline.jpg"
 const { Header } = Layout;
 const { SubMenu } = Menu;
 const { Text } = Typography
@@ -12,11 +13,14 @@ function NavTabs () {
   
   return (
    
-    <Row justify="center">
-
-      <Header >
-
-        <Menu  inlineIndent={50}   mode="horizontal">
+    
+    <Header >
+      <Row justify="center">
+       <Col style={{textAlign: 'left'}} span={8}>
+      <img width={300} src={nameLogo} alt="namelogo" />
+       </Col> 
+       <Col style={{textAlign: 'center'}} span={12}>
+        <Menu    mode="horizontal">
 
           <Menu.Item  key="mail" icon={<IdcardOutlined style={{ fontSize: '24px' }} />} className="nav-item">
 
@@ -65,10 +69,14 @@ function NavTabs () {
           </SubMenu>
 
         </Menu>
-
-      </Header>
+        </Col>
+        <Col style={{textAlign: 'right' }} span={4}>
+      <img width={250} src={tagLine} alt="namelogo" />
+       </Col> 
 
     </Row>
+      </Header>
+
 
   );
 

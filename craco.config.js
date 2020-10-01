@@ -23,7 +23,8 @@ module.exports = {
                   '@primary-5' : '@primary-color',
                   '@border-style-base': 'none',
                   '@carousel-dot-height': '10px',
-                  '@card-head-color': '@layout-body-background', //heading text for card component
+                  '@card-head-color': '@layout-body-background',
+                  '@code-family': 'Audrey'//heading text for card component
                   // '@table-bg': '@layout-body-background'
                   // '@list-customize-card-bg': '@layout-body-background'
                   // '@text-color': '@white'
