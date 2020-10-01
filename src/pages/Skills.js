@@ -14,7 +14,7 @@ const Skills = () => (
 
   <div>
 
-    <Row justify="center">
+    <Row  style={{marginTop:'50px'}} justify="center">
 
       <Divider>
 
@@ -28,7 +28,7 @@ const Skills = () => (
 
     </Row>
 
-    <Row gutter={16} justify="center">
+    <Row style={{marginTop:'100px'}} gutter={16} justify="center">
         
       <Col span={4}>
 

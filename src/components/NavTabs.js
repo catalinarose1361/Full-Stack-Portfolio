@@ -42,7 +42,7 @@ function NavTabs () {
             <NavLink 
               className="nav-link"
               to="/portfolio"
-              isActive={() => window.location.pathname === "/portfolio"}
+             
               activeClassName="active"
             > Portfolio
             </NavLink>
@@ -54,7 +54,7 @@ function NavTabs () {
             <NavLink 
               className="nav-link"
               to="/skills"
-              isActive={() => window.location.pathname === "/skills"}
+             
               activeClassName="active"
             > Skills
             </NavLink>

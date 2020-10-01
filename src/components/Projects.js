@@ -67,7 +67,7 @@ function Projects(props) {
        <Panel header="Description" key={props.key}>
        {props.description} 
        </Panel>
-      <Panel header="Links" key={props.key}>
+      {/* <Panel header="Links" key={props.key}>
         
   <Button href={props.deployed} type="primary" shape="round"  size='small'>
           Deployed App
@@ -76,7 +76,7 @@ function Projects(props) {
           Github Repo
         </Button>
       
-    </Panel>
+    </Panel> */}
     <Panel header="Technologies Used" key={props.key}>
     <List
     

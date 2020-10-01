@@ -11,7 +11,7 @@ const About = () => (
         <Row  justify="center">
             <Col span={12}>
                 <div>
-                <img width={300} src={profilePic} alt="profilepic" />
+                <img width={250} src={profilePic} alt="profilepic" />
 
                 </div>
             </Col>
@@ -49,7 +49,7 @@ const About = () => (
             </Col>
 
         </Row>
-        <Row gutter={16}>
+        <Row style={{marginTop:'100px'}} gutter={16}>
             <Col span={8}>
                 <Row justify={'center'}>
 

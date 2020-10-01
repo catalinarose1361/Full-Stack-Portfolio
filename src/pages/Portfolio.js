@@ -167,7 +167,9 @@ class Portfolio extends Component {
 	render() {
 
 	  return (
-		
+		<div style={{marginTop: '100px'}}>
+
+    
     <List                  
       grid={{ gutter: 20,  column: 3 }}
       dataSource={ProjectData}
@@ -194,7 +196,7 @@ class Portfolio extends Component {
        )}
 						
 		/>
-    	
+    </div>	
 		);
 	}
 }
