@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined } from '@ant-design/icons';
 import { Layout, Menu, Typography, Row, Col } from 'antd'
 import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
@@ -17,7 +17,9 @@ function NavTabs () {
     <Header >
       <Row justify="center">
        <Col style={{textAlign: 'left'}} span={8}>
+         <Link to="/">
       <img width={300} src={nameLogo} alt="namelogo" />
+         </Link>
        </Col> 
        <Col style={{textAlign: 'center'}} span={12}>
         <Menu    mode="horizontal">

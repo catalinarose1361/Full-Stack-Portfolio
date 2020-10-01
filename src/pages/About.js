@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Avatar, Row, Col, Image } from 'antd';
 import profilePic from "../images/profile-pictures/IMG_3002.jpg";       
-
+import {  CrownTwoTone, RocketTwoTone, EyeTwoTone  } from '@ant-design/icons';
 const { Title, Paragraph, Text } = Typography;
 
 const About = () => (
@@ -48,6 +48,20 @@ const About = () => (
       
             </Col>
 
+        </Row>
+        <Row gutter={16}>
+            <Col span={8}>
+            <CrownTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }}  />
+            Elegant
+            </Col>
+            <Col span={8}>
+            <RocketTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} />
+            Modern
+            </Col>
+            <Col span={8}>
+            <EyeTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} />
+            Intuitive
+            </Col>
         </Row>
     
     </div>
