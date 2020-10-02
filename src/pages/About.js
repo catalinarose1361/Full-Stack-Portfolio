@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Row, Col } from 'antd';
-import profilePic from "../images/profile-pictures/IMG_3002.jpg";       
+import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
 import {  CrownTwoTone, RocketTwoTone, EyeTwoTone  } from '@ant-design/icons';
 
 const { Title, Paragraph, Text } = Typography;

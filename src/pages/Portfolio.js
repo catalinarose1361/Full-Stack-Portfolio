@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Projects from "../components/Projects";
-import { Typography, Divider, Row, Col, List } from 'antd';
+import { Col, List } from 'antd';
 
 // Password Generator Screenshots Import
 import passGenPic1 from "../images/Password Generator/Screenshot1.png"
-import passGenPic2 from "../images//Password Generator/Screenshot2.png"
-import passGenPic3 from "../images//Password Generator/Screenshot3.png"
+import passGenPic2 from "../images/Password Generator/Screenshot2.png"
+import passGenPic3 from "../images/Password Generator/Screenshot3.png"
 
 // Weather Application Screenshots Import
 import worldWeatherPic1 from "../images/World Weather/Screenshot1.png"
@@ -42,12 +42,8 @@ import htmlPic1 from "../images/HTML Portfolio/Screenshot1.png"
 import htmlPic2 from "../images/HTML Portfolio/Screenshot2.png"
 import htmlPic3 from "../images/HTML Portfolio/Screenshot3.png"
 
-// Daily Puulse Screenshot Import
-// import htmlPic1 from "../images/HTML Portfolio/Screenshot1.png"
-// import htmlPic2 from "../images/HTML Portfolio/Screenshot2.png"
-// import htmlPic3 from "../images/HTML Portfolio/Screenshot3.png"
 
-const { Title } = Typography;
+
 const ProjectData = [
   {
     id: 1,
@@ -55,7 +51,7 @@ const ProjectData = [
     image: {
       'image1': codingCorgiPic1, 
       'image2': codingCorgiPic2, 
-      'image3': codingCorgiPic3
+      'image3': codingCorgiPic3,
       
     },
     github: "https://github.com/catalinarose1361/Coding-Corgi-E-Commerce",
@@ -166,48 +162,22 @@ const ProjectData = [
     description: "This Portfolio site showcases my ability to design websites using HTML/CSS",
     technologies: ["HTML", "CSS3", "UiKit", "Granim.js"]
   }
-  // {
-  //   id: 9,
-  //   name: "Daily Puulse",
-  //   image: {
-  //     'image1': dailyPic1, 
-  //     'image2': dailyPic2, 
-  //     'image3': dailyPic3 
-       
-  //   },
-  //   github: "https://github.com/catalinarose1361/Official-Portfolio-",
-  //   deployed: "https://catalinarose1361.github.io/Official-Portfolio-/",
-  //   description: "This Portfolio site showcases my ability to design websites using HTML/CSS",
-  //   technologies: ["WordPress", "Google Analytics", "HostGator"]
-  // },
+ 
 ];
 
 class Portfolio extends Component {
-	
+
 	render() {
-
+  
 	  return (
-
+     
 		  <div >
 
-        <Row style={{marginTop:'50px'}} justify="center">
-
-          <Divider>
-
-            <Typography>
-
-              <Title>Portfolio Projects</Title>
-
-            </Typography>  
-
-          </Divider>
-
-        </Row>
     
         <List 
 
-          style={{marginTop:'100px'}}                 
-          grid={{ gutter: 20,  column: 3 }}
+          style={{marginTop: '50px' }}             
+          grid={{ gutter: 50,  column: 3 }}
           dataSource={ProjectData}
           renderItem={item => (
                   

@@ -1,14 +1,14 @@
 import React from "react";
 import {  Button, Collapse, Card, Carousel, List, Typography, Col, Row } from 'antd'
-import { CaretRightOutlined } from '@ant-design/icons';
-import { GithubOutlined, DesktopOutlined } from '@ant-design/icons';
+import { CaretRightOutlined, GithubOutlined, DesktopOutlined } from '@ant-design/icons';
+
 
 const { Meta } = Card;
 const { Panel } = Collapse;
 
 function Projects(props) {
 
-  // console.log(props.src)
+  console.log(props)
 
   function onChange(a, b, c) {
 
@@ -26,11 +26,11 @@ function Projects(props) {
 
         <Carousel dotPosition={'top'} afterChange={onChange}>
    
-          <img alt={'project screenshots'} width={500} src={props.src.image1} />
+          <img alt={'project screenshots'} width={700} src={props.src.image1} />
     
-          <img alt={'project screenshots'} width={500} src={props.src.image2} />
+          <img alt={'project screenshots'} width={700} src={props.src.image2} />
   
-          <img alt={'project screenshots'} width={500} src={props.src.image3} />
+          <img alt={'project screenshots'} width={700} src={props.src.image3} />
    
         </Carousel>
 
@@ -52,7 +52,7 @@ function Projects(props) {
 
         <Col span={12}>
 
-          <Button href={props.github} icon={<GithubOutlined style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
+          <Button href={props.github} icon={<GithubOutlined twoToneColor={ '#000000'} style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
           </Button>
 
         </Col>
@@ -91,8 +91,9 @@ function Projects(props) {
             renderItem={item => (
 
               <List.Item>
-
-                <Typography.Text mark></Typography.Text> {item}
+{item}
+                {/* <Typography.Text mark>{item} */}
+{/* </Typography.Text>  */}
 
               </List.Item>
 

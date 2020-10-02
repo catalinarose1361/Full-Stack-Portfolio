@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../images/Icons/logo_size2.jpg';
+import logo from '../images/Icons/logo_size.jpg';
 
 const TitlePage = () => {
    

@@ -1,6 +1,6 @@
 import React from "react";
 import Routes from "./Routes.js";
-import { BrowserRouter as withRouter } from "react-router-dom"
+import { BrowserRouter as Router, withRouter } from "react-router-dom"
 import NavBar from "./components/NavTabs"
 import FooterComp from "./components/FooterComp"
 
