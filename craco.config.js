@@ -23,7 +23,8 @@ module.exports = {
                   '@primary-5' : '@primary-color',
                   '@border-style-base': 'none',
                   '@carousel-dot-height': '10px',
-                  '@card-head-color': '@layout-body-background'
+                  '@card-head-color': '@layout-body-background',
+                  '@font-family': "'Tenor Sans', sans-serif"
                  
              },
                 javascriptEnabled: true,
