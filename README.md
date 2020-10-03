@@ -15,7 +15,7 @@ __Built Using:__
    
 
  __Deployment:__ 
-    * [www.hirecatalina.com](https://www.hirecatalina.com)
+    http://www.hirecatalina.com
    
 ## Future Development 
     * Build a back-end database 
