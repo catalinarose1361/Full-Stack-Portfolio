@@ -1,4 +1,4 @@
-# Full-Stack-Portfolio
+
 
 <p align="center"><img src="src/images/Icons/logo_size.jpg"></p>
 
@@ -14,8 +14,8 @@ __Built Using:__
     * [Heroku](https://heroku.com)
    
 
-## Deployment 
-    *[hirecatalina.com](https://www.hirecatalina.com)
+ __Deployment:__ 
+    * [hirecatalina.com](https://www.hirecatalina.com)
    
 ## Future Development 
     * Build a back-end database 
