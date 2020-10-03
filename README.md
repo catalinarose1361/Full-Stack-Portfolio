@@ -4,7 +4,7 @@
 
 
 ## Description 
-_ A professional portfolio built to showcase the Web Development skills of Catalina Williams._
+ A professional portfolio built to showcase the Web Development skills of Catalina Williams.
 
 
 __Built Using:__
@@ -45,4 +45,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Background Photo by icon0.com from Pexels
