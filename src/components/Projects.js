@@ -1,5 +1,5 @@
 import React from "react";
-import {  Button, Collapse, Card, Carousel, List, Typography, Col, Row } from 'antd'
+import {  Button, Collapse, Card, Carousel, List, Typography, Col, Row, Image } from 'antd'
 import { CaretRightOutlined, GithubOutlined, DesktopOutlined } from '@ant-design/icons';
 
 
@@ -21,7 +21,7 @@ function Projects(props) {
     <Card 
 
       hoverable
-      style={{textAlign: "center"}}
+      style={{textAlign: "center", marginBottom: '50px'}}
       cover={
 
         <Carousel dotPosition={'top'} afterChange={onChange}>

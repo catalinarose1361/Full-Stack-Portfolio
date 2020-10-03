@@ -171,13 +171,13 @@ class Portfolio extends Component {
   
 	  return (
      
-		  <div >
+		  <div id="portfolioDiv" >
 
     
         <List 
 
-          style={{marginTop: '50px' }}             
-          grid={{ gutter: 50,  column: 3 }}
+          style={{marginTop: '100px' }}             
+          grid={{ gutter: 50,  column: 2 }}
           dataSource={ProjectData}
           renderItem={item => (
                   

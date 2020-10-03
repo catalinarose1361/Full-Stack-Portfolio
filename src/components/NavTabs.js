@@ -14,7 +14,7 @@ function NavTabs () {
   
   return (
    
-    <Header >
+    <Header id="headerContainer" >
 
       <Row justify="center">
         {/* NAME LOGO lINK COL */}
@@ -30,7 +30,7 @@ function NavTabs () {
         {/* NAV MENU COL */}
         <Col style={{textAlign: 'center'}} span={12}>
 
-          <Menu    mode="horizontal">
+          <Menu  id="menuDiv"  mode="horizontal">
 
             <Menu.Item  key="mail" icon={<IdcardOutlined style={{ fontSize: '24px' }} />} className="nav-item">
 

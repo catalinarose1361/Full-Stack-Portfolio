@@ -3,7 +3,7 @@ import { Typography, Row, Col } from 'antd';
 import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
 import {  CrownTwoTone, RocketTwoTone, EyeTwoTone  } from '@ant-design/icons';
 
-const { Title, Paragraph, Text } = Typography;
+const { Paragraph, Text } = Typography;
 
 const About = () => (
   
@@ -11,7 +11,7 @@ const About = () => (
        
         <Row style={{marginTop:'50px'}} >
 
-            <Col span={12}>
+            <Col span={10}>
 
                 <div>
 
@@ -21,25 +21,28 @@ const About = () => (
 
             </Col>
                
-            <Col span={12} >
+            <Col span={14} >
+                <div style={{textAlign:'left', marginTop:'100px', fontSize: '30px', marginRight: '60px'}}>
 
-                <Title>Pleased to meet you,</Title>
-      
                 <Typography>
 
                     <Paragraph  bold>
                        
-                        <Text style={{textAlign:'left'}} strong >
+                        <Text id="aboutText"  strong >
 
-                            My name is Catalina, I'm a Full-Stack Web Developer based in Colorado Springs, CO.
-                            I specialize in Front-End design using React.js, and MERN Stack Applications.
-                            I aim to build Web Applications that have an  ELEGANT look, a MODERN feel, and an INTUITIVE user experience.
+                            Pleased to meet you! My name is Catalina, I'm a Full-Stack Web Developer based in Colorado. 
+                            I have a passion for building Applications that have an  ELEGANT look, a MODERN feel, and an INTUITIVE user experience.
+                            I specialize in React.js and MERN Stack Applications.
+
             
                         </Text>
                     
                     </Paragraph>
             
                 </Typography>
+                </div>
+               
+      
       
             </Col>
 
