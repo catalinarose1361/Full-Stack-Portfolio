@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { KeyOutlined } from '@ant-design/icons';
+import { FunctionOutlined } from '@ant-design/icons';
 //THIS FOOTER COMPONENT ONLY APPEARS ON THE LANDING PAGE "/"
 function FooterComp () {
  
@@ -10,7 +10,7 @@ function FooterComp () {
 
       <Link to="/about">
 
-        <KeyOutlined style={{ fontSize: '50px' }} />
+      <FunctionOutlined style={{ color:'#ffffff', fontSize: '50px' }} />
          
       </Link>
 
