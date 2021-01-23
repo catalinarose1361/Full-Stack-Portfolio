@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Row, Col } from 'antd';
 import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
-import {  CrownTwoTone, RocketTwoTone, EyeTwoTone  } from '@ant-design/icons';
+import {  GithubOutlined, BookOutlined, BugOutlined  } from '@ant-design/icons';
 
 const { Paragraph, Text } = Typography;
 
@@ -30,9 +30,8 @@ const About = () => (
                        
                         <Text id="aboutText"  strong >
 
-                            Pleased to meet you! My name is Catalina, I'm a Full-Stack Web Developer based in Colorado. 
-                            I have a passion for building Applications that have an  ELEGANT look, a MODERN feel, and an INTUITIVE user experience.
-                            I specialize in React.js and MERN Stack Applications.
+                            Pleased to meet you! My name is Catalina, I'm a Full-Stack Web Developer living and loving life in Colorado, USA 
+                            
 
             
                         </Text>
@@ -54,14 +53,14 @@ const About = () => (
             <Col span={8}>
 
                 <Row justify={'center'}>
-
-                    <CrownTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }}  />
+                <GithubOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
+                    {/* <CrownTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }}  /> */}
 
                 </Row>
 
                 <Row justify={'center'}>
 
-                    Elegant
+                    491 GitHub Commits
 
                 </Row>
 
@@ -71,14 +70,14 @@ const About = () => (
             <Col span={8}>
 
                 <Row justify={'center'}>
-
-                    <RocketTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} />
+                <BookOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
+                    {/* <RocketTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} /> */}
 
                 </Row>
 
                 <Row justify={'center'}>
 
-                    Modern
+                    240 hrs of Coding Bootcamp
 
                 </Row>
 
@@ -88,14 +87,14 @@ const About = () => (
             <Col span={8}>
 
                 <Row justify={'center'}>
-
-                    <EyeTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} />
+                <BugOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
+                    {/* <EyeTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} /> */}
 
                 </Row>
 
                 <Row justify={'center'}>
 
-                    Intuitive
+                Immeasurable Personal Time De-Bugging Code
 
                 </Row>
 
