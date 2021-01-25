@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CoffeeOutlined } from '@ant-design/icons';
+import { SettingOutlined  } from '@ant-design/icons';
 //THIS FOOTER COMPONENT ONLY APPEARS ON THE LANDING PAGE "/"
 function FooterComp () {
  
@@ -10,7 +10,7 @@ function FooterComp () {
 
       <Link to="/about">
 
-      <CoffeeOutlined style={{ color:'#530EF0', fontSize: '50px' }} />
+      <SettingOutlined spin style={{ color:'#530EF0', fontSize: '50px' }} />
          
       </Link>
 
