@@ -14,7 +14,7 @@ const About = () => (
             <Col span={10}>
 
                 <div>
-
+        
                     <img width={300} src={profilePic} alt="profilepic" />
 
                 </div>

@@ -24,7 +24,7 @@ function Projects(props) {
       style={{textAlign: "center", marginBottom: '50px'}}
       cover={
 
-        <Carousel dotPosition={'top'} afterChange={onChange}>
+        <Carousel effect="fade" autoplay dotPosition={'top'} afterChange={onChange}>
    
           <img alt={'project screenshots'} width={700} src={props.src.image1} />
     
