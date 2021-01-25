@@ -30,7 +30,7 @@ const About = () => (
                        
                         <Text id="aboutText"  strong >
 
-                            Pleased to meet you! My name is Catalina, I'm a Full-Stack Web Developer living and loving life in Colorado, USA 
+                            Pleased to meet you! My name is Catalina. I build digital experiences. I specialize in both the front end and back end development.
                             
 
             

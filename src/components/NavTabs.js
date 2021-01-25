@@ -18,11 +18,11 @@ function NavTabs () {
 
       <Row justify="center">
         {/* NAME LOGO lINK COL */}
-        <Col style={{textAlign: 'left'}} span={8}>
+        <Col style={{textAlign: 'left'}} span={6}>
 
           <Link to="/">
 
-            <img width={300} src={nameLogo} alt="namelogo" />
+            {/* <img width={300} src={nameLogo} alt="namelogo" /> */}
 
           </Link>
 
@@ -44,7 +44,7 @@ function NavTabs () {
 
               > 
 
-                About 
+                .about()
 
               </NavLink>
 
@@ -60,7 +60,7 @@ function NavTabs () {
 
               > 
 
-                Portfolio
+                .portfolio()
 
               </NavLink>
 
@@ -76,13 +76,13 @@ function NavTabs () {
 
               > 
 
-                Skills
+                .skills()
 
               </NavLink>
 
             </Menu.Item>
      
-            <SubMenu key="SubMenu" icon={<UserAddOutlined style={{ fontSize: '24px' }} />} title="Connect">
+            <SubMenu key="SubMenu" icon={<UserAddOutlined style={{ fontSize: '24px' }} />} title=".connect()">
               {/* LINKEDIN */}
               <Menu.Item key="setting:1">
 
@@ -134,9 +134,9 @@ function NavTabs () {
 
         </Col>
       {/* TAGLINE COL */}
-        <Col style={{textAlign: 'right' }} span={4}>
+        <Col style={{textAlign: 'right' }} span={6}>
 
-          <img width={250} src={tagLine} alt="namelogo" />
+          {/* <img width={250} src={tagLine} alt="namelogo" /> */}
 
         </Col> 
 

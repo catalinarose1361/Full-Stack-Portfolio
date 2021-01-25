@@ -58,7 +58,7 @@ const Skills = () => (
 
       <Col span={4}>
 
-        <h2 orientation="right">CSS Frameworks</h2>
+        <h2 orientation="right">Frameworks</h2>
 
         <List
           size="large"
@@ -97,7 +97,7 @@ const Skills = () => (
 
       <Col span={4}>
 
-        <h2 orientation="right">API Interaction</h2>
+        <h2 orientation="right">API</h2>
 
         <List
           size="large"
