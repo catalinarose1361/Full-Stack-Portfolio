@@ -44,7 +44,7 @@ function NavTabs () {
 
               > 
 
-                .about()
+                about
 
               </NavLink>
 
@@ -60,7 +60,7 @@ function NavTabs () {
 
               > 
 
-                .portfolio()
+                portfolio
 
               </NavLink>
 
@@ -76,13 +76,13 @@ function NavTabs () {
 
               > 
 
-                .skills()
+                skills
 
               </NavLink>
 
             </Menu.Item>
      
-            <SubMenu key="SubMenu" icon={<UserAddOutlined style={{ fontSize: '24px' }} />} title=".connect()">
+            <SubMenu key="SubMenu" icon={<UserAddOutlined style={{ fontSize: '24px' }} />} title="connect">
               {/* LINKEDIN */}
               <Menu.Item key="setting:1">
 
