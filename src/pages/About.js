@@ -9,15 +9,11 @@ const About = () => (
   
     <div id="aboutMeContainer" style={{textAlign: "center"}}>
        
-        <Row style={{marginTop:'50px'}} >
+      
+        {/* <Row style={{marginTop:'50px'}} >
 
             <Col span={10}>
 
-                <div>
-        
-                    <img width={300} src={profilePic} alt="profilepic" />
-
-                </div>
 
             </Col>
                
@@ -45,16 +41,16 @@ const About = () => (
       
             </Col>
 
-        </Row>
+        </Row> */}
 
-        <Row style={{marginTop:'100px'}} gutter={16}>
+        {/* <Row style={{marginTop:'100px'}} gutter={16}>
 
-            {/* ELEGANT COLUM */}
+           
             <Col span={8}>
 
                 <Row justify={'center'}>
                 <GithubOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
-                    {/* <CrownTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }}  /> */}
+                    
 
                 </Row>
 
@@ -66,12 +62,12 @@ const About = () => (
 
             </Col>
 
-            {/* MODERN COL */}
+           
             <Col span={8}>
 
                 <Row justify={'center'}>
                 <BookOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
-                    {/* <RocketTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} /> */}
+                    
 
                 </Row>
 
@@ -83,12 +79,12 @@ const About = () => (
 
             </Col>
 
-            {/* iNTUITIVE COL */}
+         
             <Col span={8}>
 
                 <Row justify={'center'}>
                 <BugOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
-                    {/* <EyeTwoTone twoToneColor={'#b72c2c'} style={{ fontSize: '80px' }} /> */}
+                   
 
                 </Row>
 
@@ -100,7 +96,7 @@ const About = () => (
 
             </Col>
             
-        </Row>
+        </Row> */}
     
     </div>
 );

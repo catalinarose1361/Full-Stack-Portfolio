@@ -5,7 +5,7 @@ import NavBar from "./components/NavTabs"
 import FooterComp from "./components/FooterComp"
 
 const App = ({ location }) => {
-
+  
   return (
 
     <div style={{textAlign: 'center'}}>

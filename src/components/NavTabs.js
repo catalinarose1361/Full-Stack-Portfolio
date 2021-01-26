@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom"
-import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined } from '@ant-design/icons';
-import { Layout, Menu, Typography, Row, Col } from 'antd'
+import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
+import { Layout, Menu, Typography, Row, Col, Button } from 'antd'
 import { AppstoreOutlined } from '@ant-design/icons';
 import nameLogo from "../images/Icons/namelogo.jpg"
 import tagLine from "../images/Icons/tagline.jpg"
@@ -10,7 +10,8 @@ const { Header } = Layout;
 const { SubMenu } = Menu;
 const { Text } = Typography
 
-function NavTabs () {
+
+function NavTabs (props) {
   
   return (
    
@@ -29,7 +30,7 @@ function NavTabs () {
         </Col> 
         {/* NAV MENU COL */}
         <Col style={{textAlign: 'center'}} span={12}>
-
+        
           <Menu  id="menuDiv"  mode="horizontal">
 
             <Menu.Item  key="mail" icon={<IdcardOutlined style={{ fontSize: '24px' }} />} className="nav-item">
