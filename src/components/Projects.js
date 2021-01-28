@@ -52,14 +52,14 @@ function Projects(props) {
 
         <Col span={12}>
 
-          <Button href={props.github} icon={<GithubOutlined twoToneColor={ '#000000'} style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
+          <Button style={{borderStyle: 'none'}} href={props.github} icon={<GithubOutlined twoToneColor={ '#000000'} style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
           </Button>
 
         </Col>
     
         <Col span={12}>
 
-          <Button href={props.deployed} icon={<DesktopOutlined style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
+          <Button style={{borderStyle: 'none'}} href={props.deployed} icon={<DesktopOutlined style={{ fontSize: '32px' }} />}  shape="square"  size='large'>
           </Button>
 
         </Col>
@@ -70,23 +70,23 @@ function Projects(props) {
       <Collapse 
 
         style={{textAlign: "left"}}
-        bordered={true} 
+        bordered={false} 
         expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
         className="site-collapse-custom-collapse"
 
       >
 
-        <Panel header="Description" key={props.key}>
+        <Panel style={{backgroundColor: '#ffffff', borderStyle: 'none'}} header="Description" key={props.key}>
 
           {props.description} 
 
         </Panel>
 
-        <Panel header="Technologies Used" key={props.key}>
+        <Panel style={{backgroundColor: '#ffffff', borderStyle: 'none'}} header="Technologies Used" key={props.key}>
 
           <List
     
-            bordered
+            
             dataSource={props.technology}
             renderItem={item => (
 

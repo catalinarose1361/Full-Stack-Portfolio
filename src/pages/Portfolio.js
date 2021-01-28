@@ -177,7 +177,13 @@ class Portfolio extends Component {
         <List 
 
           style={{marginTop: '100px' }}             
-          grid={{ gutter: 50,  column: 2 }}
+          grid={{ gutter: 50,   
+            xs: 1,
+            sm: 1,
+            md: 1,
+            lg: 2,
+            xl: 2,
+            xxl: 2,}}
           dataSource={ProjectData}
           renderItem={item => (
                   

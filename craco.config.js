@@ -21,7 +21,8 @@ module.exports = {
                   '@collapse-content-bg' : '@layout-body-background',
                   '@card-head-extra-color': 'layout-body-background',
                   '@primary-5' : '@primary-color',
-                  '@border-style-base': 'none',
+                  '@border-style-base': 'solid',
+                  '@border-color-base': '@primary-color', // base border outline a component
                   '@carousel-dot-height': '10px',
                   '@card-head-color': '@primary-color',
                   '@font-family': "'Tenor Sans', sans-serif"
