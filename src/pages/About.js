@@ -1,104 +1,175 @@
-import React from "react";
-import { Typography, Row, Col } from 'antd';
+import React, { useState } from 'react';
+
+import { Typography, Row, Col, Drawer, Button, Avatar, PageHeader, Tag, Card, Timeline } from 'antd';
 import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
 import {  GithubOutlined, BookOutlined, BugOutlined  } from '@ant-design/icons';
 
 const { Paragraph, Text } = Typography;
 
-const About = () => (
+const About = () => {
+    const [visible, setVisible] = useState(false);
+  const showDrawer = () => {
+    setVisible(true);
+  };
+  const onClose = () => {
+    setVisible(false);
+  };
+
+    const [visible2, setVisible2] = useState(false);
+  const showDrawer2 = () => {
+    setVisible2(true);
+  };
+  const onClose2 = () => {
+    setVisible2(false);
+  };
+
+    const [visible3, setVisible3] = useState(false);
+  const showDrawer3 = () => {
+    setVisible3(true);
+  };
+  const onClose3 = () => {
+    setVisible3(false);
+  };
+  return (
+    <>
+    <Row justify='center'>
+    <Card 
+    
+    style={{ width: 800 }}>
+     <PageHeader
+    title="Catalina Williams"
+    className="site-page-header"
+    subTitle="Web Developer"
+    tags={<Tag color="green">available for hire</Tag>}
+   extra={<Button>Resume</Button>}
+    avatar={{ src: profilePic, size: 'large' }}
+   
+  >
+         <Paragraph>
+      Ant Design interprets the color system into two levels: a system-level color system and a
+      product-level color system.
+    </Paragraph>
+    <Paragraph>
+      Ant Design&#x27;s design team preferred to design with the HSB color model, which makes it
+      easier for designers to have a clear psychological expectation of color when adjusting colors,
+      as well as facilitate communication in teams.
+    </Paragraph>
   
-    <div id="aboutMeContainer" style={{textAlign: "center"}}>
-       
-      
-        {/* <Row style={{marginTop:'50px'}} >
-
-            <Col span={10}>
-
-
-            </Col>
-               
-            <Col span={14} >
-                <div style={{textAlign:'left', marginTop:'100px', fontSize: '30px', marginRight: '60px'}}>
-
-                <Typography>
-
-                    <Paragraph  bold>
-                       
-                        <Text id="aboutText"  strong >
-
-                            Pleased to meet you! My name is Catalina. I build digital experiences. I specialize in both the front end and back end development.
-                            
-
-            
-                        </Text>
-                    
-                    </Paragraph>
-            
-                </Typography>
-                </div>
-               
-      
-      
-            </Col>
-
-        </Row> */}
-
-        {/* <Row style={{marginTop:'100px'}} gutter={16}>
-
+  </PageHeader>
+  
+         <Row justify="center">
            
-            <Col span={8}>
+         <Button type="primary" onClick={showDrawer2}>
+        Work History
+      </Button>
+      <Drawer
+        title="Work History"
+        placement="right"
+        closable={true}
+        onClose={onClose2}
+        visible={visible2}
+        width="600"
+      >
+         <Timeline mode="right">
+    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+    <Timeline.Item>
+      Technical testing 2015-09-01
+    </Timeline.Item>
+    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+  </Timeline>
+      </Drawer>
 
-                <Row justify={'center'}>
-                <GithubOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
-                    
+         <Button type="primary" onClick={showDrawer3}>
+        Skillset
+      </Button>
+      <Drawer
+        title="Technical Skillset"
+        placement="right"
+        closable={true}
+        onClose={onClose3}
+        visible={visible3}
+      >
+        <p>JavaScript</p>
+        <p>React</p>
+        <p>Python</p>
+      </Drawer>
+      <Button type="primary" onClick={showDrawer}>
+        Education
+      </Button>
+      <Drawer
+        title="Education"
+        placement="right"
+        closable={true}
+        onClose={onClose}
+        visible={visible}
+        width="800"
+      >
+        <Card>
+        <PageHeader
+      
+      title="University of Denver Coding Bootcamp"
+      tags={<Tag color="green">Graduated</Tag>}
+      
+     
+    >
+      </PageHeader>
+        <Row>
+         
+        <p>October 2019 - April 2020</p>
+        
 
-                </Row>
+        </Row>
+        </Card>
 
-                <Row justify={'center'}>
-
-                    491 GitHub Commits
-
-                </Row>
-
-            </Col>
-
-           
-            <Col span={8}>
-
-                <Row justify={'center'}>
-                <BookOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
-                    
-
-                </Row>
-
-                <Row justify={'center'}>
-
-                    240 hrs of Coding Bootcamp
-
-                </Row>
-
-            </Col>
+        <Card>
+        <PageHeader
+      
+      title="University of Colorado Denver"
+      tags={<Tag color="red">Dropped Out</Tag>}
+      
+     
+    >
+      </PageHeader>
+        <p>August 2014 - December 2014</p>
+        </Card>
+        <Card>
+        <PageHeader
+      
+      title="Pikes Peak Community College"
+      tags={<Tag color="orange">Transferred</Tag>}
+      
+     
+    >
+      </PageHeader>
+        <p>August 2012 - May 2014</p>
+        </Card>
+        <Card>
+        <PageHeader
+      
+      title="Cheyenne Mountain High School"
+      tags={<Tag color="green">Graduated</Tag>}
+      
+     
+    >
+      </PageHeader>
+        <p>September 2008 - May 2011</p>
+        </Card>
+      </Drawer>
+         </Row>
+      
 
          
-            <Col span={8}>
-
-                <Row justify={'center'}>
-                <BugOutlined style={{ color:'#530EF0', fontSize: '80px' }} />
-                   
-
-                </Row>
-
-                <Row justify={'center'}>
-
-                Immeasurable Personal Time De-Bugging Code
-
-                </Row>
-
-            </Col>
-            
-        </Row> */}
+      
+  
+      
+      </Card>
+      </Row>
+    </>
+  );
+       
+      
     
-    </div>
-);
+};
 
 export default About;
