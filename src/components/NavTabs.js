@@ -67,21 +67,7 @@ function NavTabs (props) {
 
             </Menu.Item>
 
-            <Menu.Item key="app" icon={<ToolOutlined style={{ fontSize: '24px' }} />} className="nav-item">
-
-              <NavLink 
-
-                className="nav-link"
-                to="/skills"
-                activeClassName="active"
-
-              > 
-
-                skills
-
-              </NavLink>
-
-            </Menu.Item>
+           
      
             <SubMenu key="SubMenu" icon={<UserAddOutlined style={{ fontSize: '24px' }} />} title="connect">
               {/* LINKEDIN */}
