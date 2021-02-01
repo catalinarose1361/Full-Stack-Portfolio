@@ -61,26 +61,7 @@ const About = () => {
   
          <Row justify="center">
            
-         {/* <Button type="primary" onClick={showDrawer2}>
-        Work History
-      </Button>
-      <Drawer
-        title="Work History"
-        placement="right"
-        closable={true}
-        onClose={onClose2}
-        visible={visible2}
-        width="600"
-      >
-         <Timeline mode="right">
-    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
-    <Timeline.Item>
-      Technical testing 2015-09-01
-    </Timeline.Item>
-    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
-  </Timeline>
-      </Drawer> */}
+        
 
          <Button type="primary" onClick={showDrawer3}>
         Skillset
