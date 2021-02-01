@@ -1,17 +1,16 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom"
 import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined, SettingOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
-import { Layout, Menu, Typography, Row, Col, Button } from 'antd'
+import { Layout, Menu, Typography, Row, Col, Tooltip } from 'antd'
 import { AppstoreOutlined } from '@ant-design/icons';
-import nameLogo from "../images/Icons/namelogo.jpg"
-import tagLine from "../images/Icons/tagline.jpg"
+
 
 const { Header } = Layout;
 const { SubMenu } = Menu;
 const { Text } = Typography
 
 
-function NavTabs (props) {
+function NavTabs () {
   
   return (
    
@@ -19,17 +18,20 @@ function NavTabs (props) {
 
       <Row justify="center">
         {/* NAME LOGO lINK COL */}
-        <Col style={{textAlign: 'left'}} span={6}>
+        <Col style={{textAlign: 'left'}} span={8}>
+
+        <Tooltip title="Title Page" color={'green'}>
 
           <Link to="/">
 
           <SettingOutlined style={{ color:'#530EF0', fontSize: '25px' }} />
 
           </Link>
+          </Tooltip>
 
         </Col> 
         {/* NAV MENU COL */}
-        <Col style={{textAlign: 'center'}} span={12}>
+        <Col style={{textAlign: 'center'}} span={8}>
         
           <Menu  id="menuDiv"  mode="horizontal">
 
@@ -121,13 +123,15 @@ function NavTabs (props) {
 
         </Col>
       {/* TAGLINE COL */}
-        <Col style={{textAlign: 'right' }} span={6}>
+        <Col style={{textAlign: 'right' }} span={8}>
+        <Tooltip title="Site Repo" color={'green'} >
 
         <a href="https://github.com/catalinarose1361/React-Portfolio">
 
           <GithubOutlined style={{ color:'#530EF0', fontSize: '25px',  }} />
 
         </a>
+        </Tooltip>
 
         </Col> 
 
