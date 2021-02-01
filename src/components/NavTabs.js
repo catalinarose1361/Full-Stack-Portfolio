@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom"
-import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
+import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined, SettingOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import { Layout, Menu, Typography, Row, Col, Button } from 'antd'
 import { AppstoreOutlined } from '@ant-design/icons';
 import nameLogo from "../images/Icons/namelogo.jpg"
@@ -23,7 +23,7 @@ function NavTabs (props) {
 
           <Link to="/">
 
-            {/* <img width={300} src={nameLogo} alt="namelogo" /> */}
+          <SettingOutlined style={{ color:'#530EF0', fontSize: '25px' }} />
 
           </Link>
 
@@ -137,7 +137,11 @@ function NavTabs (props) {
       {/* TAGLINE COL */}
         <Col style={{textAlign: 'right' }} span={6}>
 
-          {/* <img width={250} src={tagLine} alt="namelogo" /> */}
+        <a href="https://github.com/catalinarose1361/React-Portfolio">
+
+          <GithubOutlined style={{ color:'#530EF0', fontSize: '25px',  }} />
+
+        </a>
 
         </Col> 
 

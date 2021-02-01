@@ -44,20 +44,17 @@ const About = () => {
      <PageHeader
     title="Catalina Williams"
     className="site-page-header"
-    subTitle="Web Developer"
+    
     tags={<Tag color="green">available for hire</Tag>}
    extra={<Button>Resume</Button>}
     avatar={{ src: profilePic, size: 'large' }}
    
   >
          <Paragraph>
-      Ant Design interprets the color system into two levels: a system-level color system and a
-      product-level color system.
+      I build full stack web applications using ReactJS
     </Paragraph>
     <Paragraph>
-      Ant Design&#x27;s design team preferred to design with the HSB color model, which makes it
-      easier for designers to have a clear psychological expectation of color when adjusting colors,
-      as well as facilitate communication in teams.
+      My comprehensive knowlege of both Front-End and Back-End technologies, allows me the freedom to code and create without limits.
     </Paragraph>
   
   </PageHeader>
