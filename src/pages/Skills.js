@@ -36,6 +36,7 @@ const Skills = () => (
 
         <List
           size="large"
+          itemLayout="horizontal"
           bordered
           dataSource={frontEndSkill}
           renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}

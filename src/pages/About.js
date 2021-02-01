@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 
-import { Typography, Row, Col, Drawer, Button, Avatar, PageHeader, Tag, Card, Timeline } from 'antd';
+import { Typography, Row, Col, Drawer, Button, Avatar, PageHeader, Tag, Card, Timeline, List } from 'antd';
 import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
 import {  GithubOutlined, BookOutlined, BugOutlined  } from '@ant-design/icons';
 
 const { Paragraph, Text } = Typography;
 
+const frontEndSkill = ["HTML5", "jQuery", "JavaScript", "ReactJS", "CSS3", "Ant.Design"]
+const backEndSkill = ["Python", "Node.js", "Git", "HerokuCLI", "APIs"]
+const dbSkill = ["MySQL", "MongoDB",]
+
 const About = () => {
+
     const [visible, setVisible] = useState(false);
   const showDrawer = () => {
     setVisible(true);
@@ -59,7 +64,7 @@ const About = () => {
   
          <Row justify="center">
            
-         <Button type="primary" onClick={showDrawer2}>
+         {/* <Button type="primary" onClick={showDrawer2}>
         Work History
       </Button>
       <Drawer
@@ -78,7 +83,7 @@ const About = () => {
     </Timeline.Item>
     <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
   </Timeline>
-      </Drawer>
+      </Drawer> */}
 
          <Button type="primary" onClick={showDrawer3}>
         Skillset
@@ -89,10 +94,50 @@ const About = () => {
         closable={true}
         onClose={onClose3}
         visible={visible3}
+        width="600"
       >
-        <p>JavaScript</p>
-        <p>React</p>
-        <p>Python</p>
+         <Row style={{marginTop:'50px'}} gutter={16} justify="center">
+        
+        <Col span={8}>
+  
+          <h4 orientation="center">Client Side</h4>
+  
+          <List
+            size="medium"
+            itemLayout="horizontal"
+            bordered
+            dataSource={frontEndSkill}
+            renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
+          />
+  
+        </Col>
+  
+        <Col span={8}>
+  
+          <h4 orientation="center">Server Side</h4>
+  
+          <List
+            size="medium"
+            bordered
+            dataSource={backEndSkill}
+            renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
+          />
+  
+        </Col>
+  
+        <Col span={8}>
+  
+          <h4 orientation="center">Databases</h4>
+  
+          <List
+            size="medium"
+            bordered
+            dataSource={dbSkill}
+            renderItem={item => <List.Item><Typography.Text level={3}>{item}</Typography.Text ></List.Item>}
+          />
+  
+        </Col>
+        </Row>
       </Drawer>
       <Button type="primary" onClick={showDrawer}>
         Education
