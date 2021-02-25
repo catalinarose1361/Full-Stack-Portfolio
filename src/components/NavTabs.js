@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom"
-import { GithubOutlined, LinkedinOutlined, YahooOutlined, PhoneOutlined, IdcardOutlined, UserAddOutlined, ToolOutlined, SettingOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
+import { GithubOutlined, LinkedinOutlined, YahooOutlined, IdcardOutlined, UserAddOutlined, SettingOutlined } from '@ant-design/icons';
 import { Layout, Menu, Typography, Row, Col, Tooltip } from 'antd'
 import { AppstoreOutlined } from '@ant-design/icons';
 
@@ -17,7 +17,7 @@ function NavTabs () {
     <Header id="headerContainer" >
 
       <Row justify="center">
-        {/* NAME LOGO lINK COL */}
+       
         <Col style={{textAlign: 'left'}} span={8}>
 
         <Tooltip title="Title Page" color={'green'}>
@@ -63,7 +63,7 @@ function NavTabs () {
 
               > 
 
-                portfolio
+                projects
 
               </NavLink>
 
@@ -81,7 +81,7 @@ function NavTabs () {
                   
                 </a>
 
-                <Text>CatalinaRWilliams</Text>
+                <Text>Connect</Text>
 
               </Menu.Item>
               {/* GITHUB */}
@@ -93,36 +93,29 @@ function NavTabs () {
 
                 </a>
 
-                <Text>CatalinaRose1361</Text>
+                <Text>View Code</Text>
 
               </Menu.Item>
               {/* EMAIL */}
               <Menu.Item key="setting:2">
 
-                <a href="mailto:catalinarose@yahoo.com">
+                <a href="mailto:webdevcatalina@gmail.com">
 
                   <YahooOutlined style={{ fontSize: '32px' }} />
 
                 </a>
 
-                <Text>CatalinaRose@yahoo.com</Text>
+                <Text>Send Email</Text>
 
               </Menu.Item>
-              {/* TELEPHONE */}
-              <Menu.Item key="setting:2">
-
-                <PhoneOutlined style={{ fontSize: '32px' }} />
-
-                <Text>(719) 749-8070</Text>
-
-              </Menu.Item>
+            
   
             </SubMenu>
 
           </Menu>
 
         </Col>
-      {/* TAGLINE COL */}
+    
         <Col style={{textAlign: 'right' }} span={8}>
         <Tooltip title="Site Repo" color={'green'} >
 

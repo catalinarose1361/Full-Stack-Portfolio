@@ -1,5 +1,5 @@
 import React from "react";
-import {  Button, Collapse, Card, Carousel, List, Typography, Col, Row, Image } from 'antd'
+import {  Button, Collapse, Card, Carousel, List, Col, Row } from 'antd'
 import { CaretRightOutlined, GithubOutlined, DesktopOutlined } from '@ant-design/icons';
 
 

@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { SettingOutlined  } from '@ant-design/icons';
 import { Tooltip } from 'antd';
+
 //THIS FOOTER COMPONENT ONLY APPEARS ON THE LANDING PAGE "/"
+
 function FooterComp () {
  
   return (

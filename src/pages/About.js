@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-
-import { Typography, Row, Col, Drawer, Button, Avatar, PageHeader, Tag, Card, Timeline, List } from 'antd';
-import profilePic from "../images/profile-pictures/IMG_3001.jpg";       
-import {  GithubOutlined, BookOutlined, BugOutlined  } from '@ant-design/icons';
-
-const { Paragraph, Text } = Typography;
+import { Typography, Row, Col, Drawer, Button,  PageHeader, Tag, Card, List } from 'antd';
+import profilePic from "../images/profile-pictures/IMG1.png";       
+import resume from "../documents/Catalina's Resume.pdf"
+import certification from "../documents/certificate.pdf"
+const { Paragraph } = Typography;
 
 const frontEndSkill = ["HTML5", "jQuery", "JavaScript", "ReactJS", "CSS3", "Ant.Design"]
 const backEndSkill = ["Python", "Node.js", "Git", "HerokuCLI", "APIs"]
@@ -20,14 +19,6 @@ const About = () => {
     setVisible(false);
   };
 
-    const [visible2, setVisible2] = useState(false);
-  const showDrawer2 = () => {
-    setVisible2(true);
-  };
-  const onClose2 = () => {
-    setVisible2(false);
-  };
-
     const [visible3, setVisible3] = useState(false);
   const showDrawer3 = () => {
     setVisible3(true);
@@ -35,37 +26,67 @@ const About = () => {
   const onClose3 = () => {
     setVisible3(false);
   };
+
   return (
+
     <>
     <Row justify='center'>
-    <Card 
-    
-    style={{ width: 800 }}>
-     <PageHeader
-    title="Catalina Williams"
-    className="site-page-header"
-    
-    tags={<Tag color="green">available for hire</Tag>}
-   extra={<Button>Resume</Button>}
-    avatar={{ src: profilePic, size: 'large' }}
-   
-  >
-         <Paragraph>
-      I build full stack web applications using ReactJS
-    </Paragraph>
-    <Paragraph>
-      My comprehensive knowlege of both Front-End and Back-End technologies, allows me the freedom to code and create without limits.
-    </Paragraph>
-  
-  </PageHeader>
-  
-         <Row justify="center">
-           
-        
 
-         <Button type="primary" onClick={showDrawer3}>
+    <Card style={{ width: 800 }}>
+
+      <PageHeader
+        title="Catalina Williams"
+        className="site-page-header"
+        tags={<Tag color="green">available for hire</Tag>}
+        avatar={{ src: profilePic, size: 'large' }}
+        extra={[
+
+          <Button href={certification} >
+            Certification
+          </Button>,
+
+          <Button href={resume} download>
+            Resume
+          </Button>
+
+        ]}
+      >
+
+         <Paragraph>
+          I build full stack web applications using ReactJS. My comprehensive knowlege of both Front-End and Back-End technologies, allows me the freedom to code and create without limits.
+        </Paragraph>
+
+        <Paragraph>
+          I graduated an all female Coding Bootcamp course in April 2020, since that day I have been continuing upon that education by staying active in my coding and continued learning.
+          I am currently seeking my first professional role in the Technical Industry, please consider this portfolio and its contents to speak for my proficiency as a Developer.
+        </Paragraph>
+
+        <Paragraph>
+          Thank you for visiting my website, please take your time and look around. 
+        </Paragraph>
+
+        <Button type="primary" onClick={showDrawer3}>
+          Skillset
+        </Button>,
+
+        <Button type="primary" onClick={showDrawer}>
+          Education
+        </Button>
+  
+      </PageHeader>
+  
+    </Card>
+
+  </Row>
+
+
+
+
+      <Row justify="center">
+        <Col span={12}>
+         {/* <Button type="primary" onClick={showDrawer3}>
         Skillset
-      </Button>
+      </Button> */}
       <Drawer
         title="Technical Skillset"
         placement="right"
@@ -117,9 +138,12 @@ const About = () => {
         </Col>
         </Row>
       </Drawer>
-      <Button type="primary" onClick={showDrawer}>
+        </Col>
+      <Col>
+
+      {/* <Button type="primary" onClick={showDrawer}>
         Education
-      </Button>
+      </Button> */}
       <Drawer
         title="Education"
         placement="right"
@@ -179,15 +203,10 @@ const About = () => {
         <p>September 2008 - May 2011</p>
         </Card>
       </Drawer>
-         </Row>
-      
-
-         
-      
-  
-      
-      </Card>
+      </Col>
       </Row>
+  
+    
     </>
   );
        
