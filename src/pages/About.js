@@ -27,31 +27,44 @@ const About = () => {
     setVisible3(false);
   };
 
+  const gridStyle = {
+    width: '50%',
+    
+  };
+
   return (
 
     <>
     <Row justify='center'>
 
-    <Card style={{ width: 800 }}>
+    <Card style={{maxWidth: '800px'}}>
 
       <PageHeader
         title="Catalina Williams"
         className="site-page-header"
+        subTitle="Full Stack JavaScript Developer"
         tags={<Tag color="green">available for hire</Tag>}
         avatar={{ src: profilePic, size: 'large' }}
         extra={[
 
-          <Button href={certification} >
+          // <Button href={certification} >
+          //   Certification
+          // </Button>,
+
+          // <Button href={resume} download>
+          //   Resume
+          // </Button>
+
+        ]}
+      >
+        <Button href={certification} >
             Certification
-          </Button>,
+          </Button>
 
           <Button href={resume} download>
             Resume
           </Button>
-
-        ]}
-      >
-
+        
          <Paragraph>
           A coding bootcamp graduate who builds full stack JavaScript applications using ReactJS.
         </Paragraph>
@@ -60,7 +73,7 @@ const About = () => {
 
         <Button type="primary" onClick={showDrawer3}>
           Skillset
-        </Button>,
+        </Button>
 
         <Button type="primary" onClick={showDrawer}>
           Education
