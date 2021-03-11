@@ -53,17 +53,10 @@ const About = () => {
       >
 
          <Paragraph>
-          I build full stack web applications using ReactJS. My comprehensive knowlege of both Front-End and Back-End technologies, allows me the freedom to code and create without limits.
+          A coding bootcamp graduate who builds full stack JavaScript applications using ReactJS.
         </Paragraph>
 
-        <Paragraph>
-          I graduated an all female Coding Bootcamp course in April 2020, since that day I have been continuing upon that education by staying active in my coding and continued learning.
-          I am currently seeking my first professional role in the Technical Industry, please consider this portfolio and its contents to speak for my proficiency as a Developer.
-        </Paragraph>
-
-        <Paragraph>
-          Thank you for visiting my website, please take your time and look around. 
-        </Paragraph>
+       
 
         <Button type="primary" onClick={showDrawer3}>
           Skillset
