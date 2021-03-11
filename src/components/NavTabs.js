@@ -38,36 +38,19 @@ function NavTabs () {
             <Menu.Item  key="mail" icon={<IdcardOutlined style={{ fontSize: '24px' }} />} className="nav-item">
 
               <NavLink 
+  className="nav-link"
+  to="/portfolio"
+  activeClassName="active"
 
-                className="nav-link"
-                to="/about"
-                // without this peice of code, Active link will always be highlighted
-                isActive={() => window.location.pathname === "/about"}
-                activeClassName="active"
+> 
 
-              > 
-
-                about
+  projects
 
               </NavLink>
 
             </Menu.Item>
 
-            <Menu.Item key="app" icon={<AppstoreOutlined style={{ fontSize: '24px' }} />} className="nav-item">
-
-              <NavLink 
-
-                className="nav-link"
-                to="/portfolio"
-                activeClassName="active"
-
-              > 
-
-                projects
-
-              </NavLink>
-
-            </Menu.Item>
+       
 
            
      
@@ -111,6 +94,26 @@ function NavTabs () {
             
   
             </SubMenu>
+
+            <Menu.Item key="app" icon={<AppstoreOutlined style={{ fontSize: '24px' }} />} className="nav-item">
+
+              <NavLink 
+
+className="nav-link"
+to="/about"
+// without this peice of code, Active link will always be highlighted
+isActive={() => window.location.pathname === "/about"}
+activeClassName="active"
+
+> 
+
+about
+
+         
+
+              </NavLink>
+
+            </Menu.Item>
 
           </Menu>
 
