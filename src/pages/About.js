@@ -66,7 +66,23 @@ const About = () => {
           </Button>
         
          <Paragraph>
-          A coding bootcamp graduate who builds full stack JavaScript applications using ReactJS.
+         Pleased to meet you, and thank you for taking time out of your busy day to check out my portfolio! Allow me to tell you a little bit about myself, and my qualifications.
+         </Paragraph>
+         <Paragraph>
+My name is Catalina, I'm a Full-Stack JavaScript Developer living in the beautiful state of Colorado. I spend my days committing code to GitHub, exercising with my VR headset, and caring for my dog.
+</Paragraph>
+<Paragraph>
+A few years ago, I began to grow tired of customer service jobs. After six years of full-time work, I wasn't growing professionally or intellectually. Eventually, I decided to switch career paths and make a daring leap into the Technology Industry.
+</Paragraph>
+
+<Paragraph>
+I earned my Web Development qualifications at the University of Denver's Coding Bootcamp. I developed skills in JavaScript, HTML, CSS, jQuery, MySQL, MongoDB, Node.js, React.js, Git, and more. I graduated in April 2020, certifying 240 classroom hours completed.
+</Paragraph>
+<Paragraph>
+Post-Bootcamp, I have continued to develop my skills in pursuit of a Career as a Full Stack JavaScript Developer. I specialize in building Web Applications using M.E.R.N Stack Technologies and deploying them live to Heroku. If you would like to check out my portfolio of personal projects, please visit www.hirecatalina.com
+</Paragraph>
+<Paragraph>
+I'm currently seeking Full-Time opportunities, and open to relocation anywhere. If you would like to reach out regarding a job opportunity please email me at webdevcatalina@gmail.com or message me on LinkedIn. I look forward to hearing from you!
         </Paragraph>
 
        
