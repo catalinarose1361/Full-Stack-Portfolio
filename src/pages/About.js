@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Typography, Row, Col, Drawer, Button, PageHeader, Tag, Card, List, Image } from 'antd';
-import profilePic from "../images/profile-pictures/IMG1.png";    
-import deskPic   from "../images/profile-pictures/IMG_5406.JPG";
+import profilePic from "../images/profile-pictures/IMG_5329.JPG";    
+import { BookOutlined, ToolOutlined, ReadOutlined, SolutionOutlined } from '@ant-design/icons';
 import resume from "../documents/Catalina's Resume.pdf"
 import certification from "../documents/certificate.pdf"
 const { Paragraph } = Typography;
@@ -36,9 +36,9 @@ const About = () => {
   return (
 
     <>
-    <Row>
-    <Col span={16}>
-    <Card style={{maxWidth: '1500px'}}>
+    <Row justify="center">
+    <Col span={13}>
+    <Card style={{maxWidth: '1500px', border: 'none'}}>
 
       <PageHeader
         title="Catalina Williams"
@@ -82,12 +82,12 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
     </Card>
     </Col>
 
-    <Col span={8}>
+    <Col span={9}>
     
       <img
-      height={650}
-      width={550}
-      src={deskPic}
+      height={700}
+      width={800}
+      src={profilePic}
     />
       
  
@@ -98,23 +98,24 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
   </Row>
 <Row>
   <Col span={6}>
-  <Button type="primary" onClick={showDrawer}>
-          Education
+  
+  <Button  size="large" type="link" icon={ <ReadOutlined /> } onClick={showDrawer}>
+ View Education
         </Button>
   </Col>
   <Col span={6}>
-  <Button type="primary" onClick={showDrawer3}>
-          Skillset
+  <Button size="large" type="link" icon={ <ToolOutlined /> } onClick={showDrawer3}>
+          View Skillset
         </Button>
   </Col>
   <Col span={6}>
-  <Button href={resume} download>
-            Resume
+  <Button size="large" type="link" icon={ <SolutionOutlined /> } href={resume} download>
+            Download Resume
           </Button>
   </Col>
   <Col span={6}>
-  <Button href={certification} >
-            Certification
+  <Button  size="large" type="link" icon={ <BookOutlined /> } href={certification} >
+            Download Certification
           </Button>
   </Col>
  
@@ -124,9 +125,7 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
 
       <Row justify="center">
         <Col span={12}>
-         {/* <Button type="primary" onClick={showDrawer3}>
-        Skillset
-      </Button> */}
+      
       <Drawer
         title="Technical Skillset"
         placement="right"
