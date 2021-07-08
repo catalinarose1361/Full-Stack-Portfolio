@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Typography, Row, Col, Drawer, Button,  PageHeader, Tag, Card, List } from 'antd';
-import profilePic from "../images/profile-pictures/IMG1.png";       
+import { Typography, Row, Col, Drawer, Button, PageHeader, Tag, Card, List, Image } from 'antd';
+import profilePic from "../images/profile-pictures/IMG1.png";    
+import deskPic   from "../images/profile-pictures/IMG_5406.JPG";
 import resume from "../documents/Catalina's Resume.pdf"
 import certification from "../documents/certificate.pdf"
 const { Paragraph } = Typography;
@@ -35,35 +36,23 @@ const About = () => {
   return (
 
     <>
-    <Row justify='center'>
-
-    <Card style={{maxWidth: '800px'}}>
+    <Row>
+    <Col span={16}>
+    <Card style={{maxWidth: '1500px'}}>
 
       <PageHeader
         title="Catalina Williams"
         className="site-page-header"
         subTitle="Full Stack JavaScript Developer"
-        tags={<Tag color="green">available for hire</Tag>}
-        avatar={{ src: profilePic, size: 'large' }}
+        tags={<Tag color="green">Seeking Full-Time Opportunities</Tag>}
+       
         extra={[
 
-          // <Button href={certification} >
-          //   Certification
-          // </Button>,
-
-          // <Button href={resume} download>
-          //   Resume
-          // </Button>
+       
 
         ]}
       >
-        <Button href={certification} >
-            Certification
-          </Button>
-
-          <Button href={resume} download>
-            Resume
-          </Button>
+      
         
          <Paragraph>
          Pleased to meet you, and thank you for taking time out of your busy day to check out my portfolio! Allow me to tell you a little bit about myself, and my qualifications.
@@ -86,21 +75,50 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
         </Paragraph>
 
        
-
-        <Button type="primary" onClick={showDrawer3}>
-          Skillset
-        </Button>
-
-        <Button type="primary" onClick={showDrawer}>
-          Education
-        </Button>
-  
+     
+     
       </PageHeader>
   
     </Card>
+    </Col>
+
+    <Col span={8}>
+    
+      <img
+      height={650}
+      width={550}
+      src={deskPic}
+    />
+      
+ 
+  
+    </Col>
+   
 
   </Row>
-
+<Row>
+  <Col span={6}>
+  <Button type="primary" onClick={showDrawer}>
+          Education
+        </Button>
+  </Col>
+  <Col span={6}>
+  <Button type="primary" onClick={showDrawer3}>
+          Skillset
+        </Button>
+  </Col>
+  <Col span={6}>
+  <Button href={resume} download>
+            Resume
+          </Button>
+  </Col>
+  <Col span={6}>
+  <Button href={certification} >
+            Certification
+          </Button>
+  </Col>
+ 
+</Row>
 
 
 
@@ -163,9 +181,7 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
         </Col>
       <Col>
 
-      {/* <Button type="primary" onClick={showDrawer}>
-        Education
-      </Button> */}
+      
       <Drawer
         title="Education"
         placement="right"
@@ -195,7 +211,7 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
         <PageHeader
       
       title="University of Colorado Denver"
-      tags={<Tag color="red">Dropped Out</Tag>}
+      tags={<Tag color="orange">10 Credits Completed</Tag>}
       
      
     >
@@ -206,7 +222,7 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
         <PageHeader
       
       title="Pikes Peak Community College"
-      tags={<Tag color="orange">Transferred</Tag>}
+      tags={<Tag color="orange">47 Credits Completed</Tag>}
       
      
     >
