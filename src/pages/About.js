@@ -96,24 +96,25 @@ I'm currently seeking Full-Time opportunities, and open to relocation anywhere. 
    
 
   </Row>
-<Row>
-  <Col span={6}>
+<Row
+          >
+  <Col  span={6}>
   
   <Button  size="large" type="link" icon={ <ReadOutlined /> } onClick={showDrawer}>
  View Education
         </Button>
   </Col>
-  <Col span={6}>
+  <Col  span={6}>
   <Button size="large" type="link" icon={ <ToolOutlined /> } onClick={showDrawer3}>
           View Skillset
         </Button>
   </Col>
-  <Col span={6}>
+  <Col  span={6}>
   <Button size="large" type="link" icon={ <SolutionOutlined /> } href={resume} download>
             Download Resume
           </Button>
   </Col>
-  <Col span={6}>
+  <Col  span={6}>
   <Button  size="large" type="link" icon={ <BookOutlined /> } href={certification} >
             Download Certification
           </Button>
